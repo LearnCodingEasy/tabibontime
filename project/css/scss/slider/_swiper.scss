@@ -1,0 +1,225 @@
+.slider {
+  position: relative;
+  height: calc(100vh - 78px);
+  min-height: 400px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper {
+      height: 100%;
+      .swiper-slide {
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .inner {
+          position: relative;
+          .img {
+            width: 100%;
+            height: calc(100vh - 78px);
+          }
+          .text {
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            background-color: var(--color-first-light);
+            padding: 3rem;
+            border-radius: 1rem;
+            /* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */
+            @media screen and (max-width: 575.98px) {
+              width: 95%;
+              left: 2.5%;
+              margin: auto;
+              padding: 0.5rem;
+            }
+            /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+            @media screen and (min-width: 576px) and (max-width: 677px) {
+              width: 95%;
+              left: 2.5%;
+              margin: auto;
+              padding: 0.5rem;
+            }
+            /* Large Devices (Phones, 678px And 767px) */
+            @media screen and (min-width: 678px) and (max-width: 767px) {
+              width: 95%;
+              left: 2.5%;
+              margin: auto;
+              padding: 0.5rem;
+            }
+            /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+              width: 50%;
+            }
+            /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+            @media screen and (min-width: 992px) and (max-width: 1199px) {
+              width: 50%;
+            }
+            /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+            @media screen and (min-width: 1200px) and (max-width: 1399px) {
+              width: 50%;
+            }
+            /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+            @media screen and (min-width: 1400px) {
+              width: 50%;
+            }
+            .img {
+              position: absolute;
+              left: 1rem;
+              top: 1rem;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              border-top: 0.9rem solid rgb(255, 102, 0);
+              border-bottom: 0.9rem solid rgb(255, 102, 0);
+              border-right: 0.9rem solid transparent;
+              border-left: 0.9rem solid rgb(255, 102, 0);
+              transform: rotate(345deg);
+              /* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */
+              @media screen and (max-width: 575.98px) {
+                width: 50px;
+                height: 50px;
+                transform: rotate(353deg);
+                left: 0.1rem;
+                top: 0.1rem;
+              }
+              /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+              @media screen and (min-width: 576px) and (max-width: 677px) {
+                width: 50px;
+                height: 50px;
+                transform: rotate(353deg);
+                left: 0.1rem;
+                top: 0.1rem;
+              }
+              /* Large Devices (Phones, 678px And 767px) */
+              @media screen and (min-width: 678px) and (max-width: 767px) {
+                width: 50px;
+                height: 50px;
+                transform: rotate(353deg);
+                left: 0.1rem;
+                top: 0.1rem;
+              }
+              /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+              }
+              /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+              @media screen and (min-width: 992px) and (max-width: 1199px) {
+              }
+              /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+              @media screen and (min-width: 1200px) and (max-width: 1399px) {
+              }
+              /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+              @media screen and (min-width: 1400px) {
+              }
+            }
+            .content {
+              padding-right: 2rem;
+              .title {
+                color: var(--color-second-title);
+                position: relative;
+                font-weight: bold;
+                font-size: var(--font-size-big);
+                padding-bottom: 2rem;
+                text-align: var(--website-direction);
+              }
+              .description {
+                color: var(--color-second-text);
+                color: #fff;
+                z-index: 4;
+                position: relative;
+              }
+            }
+          }
+        }
+        &.swiper-slide-active {
+          display: block;
+        }
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      font-size: 15px;
+      color: #fff;
+      background: #33333375;
+      width: 30px;
+      height: 100px;
+      line-height: 100px;
+      margin-top: -50px;
+      text-align: center;
+      transition: all 0.4s linear;
+      left: -50px;
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 25px;
+      &:hover {
+        background: #333;
+      }
+    }
+
+    // Button Bottom Click
+    .swiper-pagination {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .swiper-pagination-bullet {
+        width: 30px;
+        border-radius: 5px;
+        &.swiper-pagination-bullet-active {
+          background-color: var(--color-first-slider);
+        }
+      }
+    }
+    // Auto Play
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--color-first-slider);
+      svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        stroke: var(--color-first-slider);
+        fill: none;
+        stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+      }
+    }
+    &:hover {
+      .swiper-button-next {
+        opacity: 1;
+        right: 0.5rem;
+        left: auto;
+      }
+      .swiper-button-prev {
+        opacity: 1;
+        left: 0.5rem;
+      }
+    }
+  }
+}

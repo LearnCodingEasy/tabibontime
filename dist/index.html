@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your Website Description">
+    <meta name="copyright" content="Your Company Or Brand Name">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Learn Coding Easy">
+    <meta name="revised" content="Tuesday, July 20th, 2022, 10:15 am">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tabib On Time">
+    <meta property="og:description" content="Welcome to my website">
+    <meta property="og:image" content="https://example.com/images/my-image.png">
+    <title>Tabib On Time</title>
+    <link rel="shortcut icon" href="/images/icons/favicon.webp" type="image/x-icon">
+    <!-- =============== Bootstrap V5.2.2 ===============-->
+    <!-- =============== https://getbootstrap.com/ ===============-->
+    <link rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css">
+    <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- =============== swiper ===============-->
+    <!-- =============== https://swiperjs.com/ ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+    <!-- =============== fontawesome V5 ===============-->
+    <!-- ===============  ===============-->
+    <link rel="stylesheet" href="css/libs/fontawesome/all.min.css">
+    <!-- My Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Map-->
+    <!-- =============== Start Pwa ===============-->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/icons/icon-128.webp" type="images/x-icon">
+    <!-- ios support-->
+    <link rel="apple-touch-icon" href="images/icons/icon-24.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-32.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-48.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-64.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-72.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-96.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-128.webp">
+    <link rel="apple-touch-icon" href="images/icons/icon-256.webp">
+    <meta name="apple-mobile-web-app-status-bar" content="#1d78f7">
+    <meta name="theme-color" content="#1d78f7">
+    <meta name="application-name" content="Tabib On Time">
+    <link rel="icon" sizes="16x16 32x32 48x48" href="images/icons/icon-256.webp">
+    <link rel="icon" sizes="512x512" href="images/icons/icon-256.png">
+    <!-- =============== End Pwa ===============-->
+  </head>
+  <body> 
+    <header class="header" id="header">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-container container">
+          <!-- Logo-->
+          <div class="navbar-logo-div"><a class="navbar-logo-a" href="index.html"><img class="navbar-logo-image" src="images/icons/icon.webp" alt="Navbar Logo"><span class="navbar-logo-text"><i class="fas fa-stethoscope navbar-logo-text-icon"></i><span class="navbar-logo-text-content">Tabib On Line</span></span></a></div>
+          <!-- Menu-->
+          <div class="navbar-menu-div" id="navbar-menu-div">
+            <ul class="navbar-menu-list-ul">
+              <li class="navbar-menu-list-li"><a class="navbar-menu-list-a" href="index.html"><span class="navbar-menu-list-text">Home </span><i class="fas fa-stethoscope navbar-menu-list-icon"></i></a></li>
+              <li class="navbar-menu-list-li"><a class="navbar-menu-list-a" href="about.html"><span class="navbar-menu-list-text">About </span><i class="fas fa-address-card navbar-menu-list-icon"></i></a></li>
+              <li class="navbar-menu-list-li"><a class="navbar-menu-list-a" href="services.html"><span class="navbar-menu-list-text">services </span><i class="fab fa-servicestack navbar-menu-list-icon"></i></a></li>
+              <li class="navbar-menu-list-li"><a class="navbar-menu-list-a" href="index.html"><span class="navbar-menu-list-text">Team </span><i class="fas fa-file-signature navbar-menu-list-icon"></i></a></li>
+              <li class="navbar-menu-list-li"><a class="navbar-menu-list-a" href="contact.html"><span class="navbar-menu-list-text">contact </span><i class="fas fa-file-signature navbar-menu-list-icon"></i></a></li>
+            </ul>
+          </div>
+          <!-- Profile Menu-->
+          <div class="profile-menu">
+            <div class="profile-menu-wrapper">
+              <div class="profile-menu-inner">
+                <label class="profile-menu-label-parent" for="profile2">
+                  <input class="profile-menu-input-checkbox" type="checkbox" id="profile2"><img class="profile-menu-image" src="https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png" alt="Profile Menu Image"><span class="profile-menu-name"> </span>
+                  <label for="profile2"><i class="fas fa-bars"> </i></label>
+                  <ul class="profile-menu-ul">
+                    <li class="profile-menu-li logged-user"><a class="profile-menu-a profile-page" data-href="profile" href="#"> <i class="fas fa-user profile-menu-icon"></i><span class="profile-menu-text">Profile</span></a></li>
+                    <li class="profile-menu-li logged-user"><a class="profile-menu-a profile-logOut" data-href="createPost" href="#"> <i class="fas fa-plus profile-menu-icon"></i><span class="profile-menu-text">Create Post</span></a></li>
+                    <li class="profile-menu-li logged-user"><a class="profile-menu-a logout profile-logOut" data-href="logout" href="#"> <i class="fas fa-sign-out-alt profile-menu-icon"></i><span class="profile-menu-text">Log Out</span></a></li>
+                    <li class="profile-menu-li not-logged-user"><a class="profile-menu-a  profile-signUp" data-href="signUp" href="#"> <i class="fas fa-sign-in-alt profile-menu-icon"></i><span class="profile-menu-text">Sign Up</span></a></li>
+                    <li class="profile-menu-li not-logged-user"><a class="profile-menu-a  profile-LogIn" data-href="signIn" href="#"> <i class="fas fa-sign-in-alt profile-menu-icon"></i><span class="profile-menu-text">Log In</span></a></li>
+                    <!-- Theme  -->
+                    <li class="profile-menu-li profile-menu-li-theme"> 
+                      <ul class="profile-menu-li-theme-ul">
+                        <li class="profile-menu-li-theme-ul-li active-theme" data-theme-name="light-theme"><span class="profile-menu-li-theme-data-text">Light</span><i class="fas fa-sun profile-menu-li-theme-icon"></i></li>
+                        <li class="profile-menu-li-theme-ul-li" data-theme-name="dark-theme"><span class="profile-menu-li-theme-data-text">Dark</span><i class="fas fa-moon profile-menu-li-theme-icon"></i></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Navbar Toggle-->
+          <div class="navbar-toggle" id="navbar-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Loading-->
+    <div id="preloader">
+      <div class="preloader-area">
+        <div class="preloader-box">
+          <div class="preloader"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Change Theme-->
+    <!-- Back To Top-->
+    <div class="back-to-top">Top</div><!-- Swiper -->
+    <!-- Swiper-->
+    <div class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> 
+            <div class="inner">
+              <div class="img"><img src="images/slider/slider-1.webp" alt=""></div>
+              <div class="text">
+                <div class="img"></div>
+                <div class="content">
+                  <h4 class="title"> Know everything related to the health of the child</h4>
+                  <p class="lead description">  10 important steps to treat lack of focus in studying, distraction and forgetfulness A frequent question for most parents...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="inner">
+              <div class="img"><img src="images/slider/slider-2.webp" alt=""></div>
+              <div class="text">
+                <div class="img"></div>
+                <div class="content">
+                  <h4 class="title"> Know everything related to the health of the child</h4>
+                  <p class="lead description"> 10 important steps to treat lack of focus in studying, distraction and forgetfulness A frequent question for most parents...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="inner">
+              <div class="img"><img src="images/slider/slider-3.webp" alt=""></div>
+              <div class="text">
+                <div class="img"></div>
+                <div class="content">
+                  <h4 class="title"> Know everything related to the health of the child</h4>
+                  <p class="lead description">10 important steps to treat lack of focus in studying, distraction and forgetfulness A frequent question for most parents...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="inner">
+              <div class="img"><img src="images/slider/slider-4.webp" alt=""></div>
+              <div class="text">
+                <div class="img"></div>
+                <div class="content">
+                  <h4 class="title">Know everything related to the health of the child</h4>
+                  <p class="lead description"> 10 important steps to treat lack of focus in studying, distraction and forgetfulness A frequent question for most parents...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg><span></span>
+        </div>
+      </div>
+    </div>
+    <main class="main"> 
+      <!-- SignUp-->
+      <section class="signUp" id="signUp">
+        <div class="container-fluid">
+          <div class="wrapper-signUp">
+            <div class="inner-signUp">
+              <div class="form-signUp">
+                <div class="back-home"><a href="index.html"><span>Back To Home</span><i class="fas fa-arrow-right iconName-icon"></i></a></div>
+                <div class="wrapper-form">
+                  <div class="data-title-description">
+                    <div class="title">join us</div>
+                    <div class="description">Create your account now to take advantage of the various features</div>
+                  </div>
+                  <form class="form addUser" action="" id="form-signUp">
+                    <!-- photo URL-->
+                    <div class="control-PhotoURL">
+                      <label class="form-label" for="inputPhotoURL"> PhotoURL</label>
+                      <input class="form-control" type="file" name="inputPhotoURL" id="inputPhotoURL" placeholder="Type Email">
+                    </div>
+                    <!-- Display Name-->
+                    <div class="control-displayName">
+                      <label class="form-label" for="inputDisplayName"> Display Name</label>
+                      <input class="form-control" type="text" name="inputDisplayName" id="inputDisplayName" placeholder="Type Email">
+                    </div>
+                    <!-- Display Name-->
+                    <div class="control-phoneNumber">
+                      <label class="form-label" for="inputPhoneNumber">Phone Number</label>
+                      <input class="form-control" type="text" name="inputPhoneNumber" id="inputPhoneNumber" placeholder="Type Email">
+                    </div>
+                    <div class="control-email">
+                      <label class="form-label" for="inputEmail">Email address</label>
+                      <input class="form-control" type="email" name="inputEmail" id="inputEmail" placeholder="Type Email">
+                    </div>
+                    <div class="control-password ">
+                      <label class="form-label" for="inputPassword">Password</label>
+                      <div class="input-group">
+                        <input class="form-control" type="password" name="inputPassword" id="inputPassword" placeholder="Type Password">
+                        <button class="input-group-text btn-toggle-icon-signUp fas fa-eye" id="btn-toggle-icon"></button>
+                      </div>
+                    </div>
+                    <div class="error-form-signUp"> 
+                      <div class="head-error"><span class="input-name-error">Email</span><span class="input-name-icon"> <i class="fas fa-times close-icon"></i></span></div>
+                      <div class="body-error">
+                        <p class="inner-error">text Error</p>
+                      </div>
+                    </div>
+                    <input type="submit" value="Send">
+                  </form>
+                </div>
+              </div>
+              <!-- Slider -->
+              <div class="slider-signUp">
+                <!-- =============== swiper ===============-->
+                <!-- =============== https://swiperjs.com/ ===============-->
+                <!-- link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+                <!-- script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") -->
+                <!-- Swiper  -->
+                <div class="swiper signUpSlider">
+                  <!-- Wrapper-->
+                  <div class="swiper-wrapper">
+                    <!-- Inner-->
+                    <div class="swiper-slide"> 
+                      <div class="item">
+                        <div class="img"><img src="images/signUp/auth.webp" alt="alt"></div>
+                        <div class="data-text">
+                          <div class="title">The best health care for you and your family</div>
+                          <div class="description">We believe that superior medical care is a right for everyone</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="item">
+                        <div class="img"><img src="images/signUp/auth-data.webp" alt="alt"></div>
+                        <div class="data-text">
+                          <div class="title">The best health care for you and your family</div>
+                          <div class="description">We believe that superior medical care is a right for everyone</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Button Bottom -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sign In-->
+      <section class="signIn" id="signIn">
+        <div class="container-fluid">
+          <div class="wrapper-signIn">
+            <div class="inner-signIn">
+              <div class="form-signIn">
+                <div class="back-home"><a href="index.html"><span>Back To Home</span><i class="fas fa-arrow-right iconName-icon"></i></a></div>
+                <div class="wrapper-form">
+                  <div class="data-title-description">
+                    <div class="title">SignIn</div>
+                    <div class="description">Welcome to SignIn! We wish you an interesting and useful time with us.</div>
+                  </div>
+                  <form class="form " action="" id="form-signIn"> 
+                    <div class="control-email">
+                      <label class="form-label" for="inputEmail">Email address</label>
+                      <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Type Email">
+                    </div>
+                    <div class="control-password ">
+                      <label class="form-label" for="inputPassword">Password</label>
+                      <div class="input-group">
+                        <input class="form-control" type="password" name="password" id="inputPassword" placeholder="Type Password">
+                        <button class="input-group-text fas fa-eye" id="btn-toggle-icon"></button>
+                      </div>
+                    </div>
+                    <div class="error-form-signIn"> 
+                      <div class="head-error"><span class="input-name-error">Email</span><span class="input-name-icon"> <i class="fas fa-times close-icon"></i></span></div>
+                      <div class="body-error">
+                        <p class="inner-error">text Error</p>
+                      </div>
+                    </div>
+                    <input type="submit" value="Send">
+                  </form>
+                </div>
+              </div>
+              <!-- Slider -->
+              <div class="slider-signUp">
+                <!-- =============== swiper ===============-->
+                <!-- =============== https://swiperjs.com/ ===============-->
+                <!-- link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+                <!-- script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") -->
+                <!-- Swiper  -->
+                <div class="swiper signUpSlider">
+                  <!-- Wrapper-->
+                  <div class="swiper-wrapper">
+                    <!-- Inner-->
+                    <div class="swiper-slide"> 
+                      <div class="item">
+                        <div class="img"><img src="images/signUp/auth.webp" alt="alt"></div>
+                        <div class="data-text">
+                          <div class="title">The best health care for you and your family</div>
+                          <div class="description">We believe that superior medical care is a right for everyone</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="item">
+                        <div class="img"><img src="images/signUp/auth-data.webp" alt="alt"></div>
+                        <div class="data-text">
+                          <div class="title">The best health care for you and your family</div>
+                          <div class="description">We believe that superior medical care is a right for everyone</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Button Bottom -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- profile-->
+      <section class="profile" id="profile">
+        <div class="container-fluid">
+          <div class="wrapper-profile">
+            <div class="inner-profile">
+              <div class="back-home"><a href="index.html"><span>Back To Home</span><i class="fas fa-arrow-right iconName-icon"></i></a></div>
+              <div class="box-profile"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Create Post-->
+      <section class="createPost" id="createPost">
+        <div class="container-fluid">
+          <div class="wrapper-createPost">
+            <div class="inner-createPost">
+              <div class="form-createPost">
+                <div class="back-home"><a href="index.html"><span>Back To Home</span><i class="fas fa-arrow-right iconName-icon"></i></a></div>
+                <div class="wrapper-form">
+                  <div class="data-title-description">
+                    <div class="title">Create Post</div>
+                    <div class="description">Welcome to Create Post! </div>
+                  </div>
+                  <form class="form " action="" id="form-createPost"> 
+                    <!-- Image-->
+                    <div class="control-image-post">
+                      <label class="form-label" for="inputImages">Multiple Files Image</label>
+                      <input class="form-control" type="file" name="inputSelectImages" id="inputSelectImages" Multiple>
+                    </div>
+                    <!--  Title-->
+                    <div class="control-title-post">
+                      <label class="form-label" for="inputTitlePost">Title Post</label>
+                      <input class="form-control" type="text" name="inputTitlePost" id="inputTitlePost" placeholder="Type Title Post">
+                    </div>
+                    <!-- Description-->
+                    <div class="form-floating control-description-post">
+                      <textarea class="form-control" name="inputDescriptionPost" placeholder="Description" id="inputDescriptionPost"></textarea>
+                      <label class="form-label" for="inputDescriptionPost">Description Post</label>
+                    </div>
+                    <!-- Purview & Reading-->
+                    <div class="control-purview-reading-post">
+                      <div class="row g-2">
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <select class="form-select" name="selectPurview" id="selectPurview"> 
+                              <option value="purview one">purview one</option>
+                              <option value="purview tow">purview tow</option>
+                              <option value="purview three">purview three</option>
+                            </select>
+                            <label for="purview">Purview</label>
+                          </div>
+                        </div>
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <select class="form-select" name="selectReading" id="selectReading"> 
+                              <option value="reading one">reading one</option>
+                              <option value="reading tow">reading tow</option>
+                              <option value="reading three">reading three</option>
+                            </select>
+                            <label for="reading">Reading</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="error-form-createPost"> 
+                      <div class="head-error"><span class="input-name-error">Email</span><span class="input-name-icon"> <i class="fas fa-times close-icon"></i></span></div>
+                      <div class="body-error">
+                        <p class="inner-error">text Error</p>
+                      </div>
+                    </div>
+                    <input type="submit" value="Send">
+                  </form>
+                </div>
+              </div>
+              <!-- Preview Post -->
+              <div class="view-post">
+                <div class="view-post-wrapper">
+                  <div class="view-post-images" id="view-post-images"></div>
+                  <p class="view-post-ImgUploadProgress"> </p>
+                  <p class="view-post-title"> </p>
+                  <p class="view-post-description"> </p>
+                  <div class="wrapper-purview-reading">
+                    <p class="view-post-purview"> </p>
+                    <p class="view-post-reading"> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Physical Health-->
+      <section class="physical-health"> 
+        <div class="container"> 
+          <div class="header-physical-health">
+            <h4 class="title">Our medical community</h4>
+            <p class="description">Learn about your physical and mental health habits through the Dotcare Medical Blog.</p>
+          </div>
+          <!-- =============== swiper ===============-->
+          <!-- =============== https://swiperjs.com/ ===============-->
+          <!-- link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+          <!-- script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") -->
+          <!-- Swiper  -->
+          <div class="swiper physicalHealth">
+            <!-- Wrapper-->
+            <div class="swiper-wrapper">
+              <!-- Inner-->
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-2.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-3.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-4.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-5.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-6.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-7.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-8.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="inner">
+                  <div class="img"><img src="images/main/main-9.webp" alt=""><span class="text">New</span></div>
+                  <div class="text"><a href="#">Learn the best tips to prevent diabetes</a>
+                    <p class="description">Studies show that 9 out of 10 people can avoid diabetes, follow us</p>
+                    <div class="type"><span class="type-data">Health and Beauty</span><span class="type-data">5 minutes read</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Arrow Left And Right-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Button Bottom -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Care-->
+      <section class="homeCare"> 
+        <div class="container">
+          <div class="inner">
+            <div class="text">
+              <h4 class="title">Home care services will be available soon</h4>
+              <p class="description">You can now book home care services through the Dot Care application, and it will soon be available through the website</p>
+            </div>
+            <div class="img"><img src="images/main/main-1.webp" alt="alt"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Book with us according to specialties-->
+      <section class="bookWithUs">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="slider">
+                <!-- =============== swiper ===============-->
+                <!-- =============== https://swiperjs.com/ ===============-->
+                <!-- link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+                <!-- script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") -->
+                <!-- Swiper  -->
+                <div class="swiper bookWithUsSwiper">
+                  <!-- Wrapper-->
+                  <div class="swiper-wrapper">
+                    <!-- Inner-->
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="content">
+                        <div class="img"><img src="images/main/bookWithUs.webp" alt=""></div>
+                        <div class="icon"><img src="images/main/ENT.webp" alt="alt"></div>
+                        <div class="type">
+                          <p>Ear, Nose and Throat</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Arrow Left And Right-->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+              <div class="buttonClick">
+                <h3 class="text">Book with us according to specialties</h3><a class="main-button" href="#">View all majors</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Visiting Doctors Program-->
+      <section class="visiting-doctor-program">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title">Visiting Doctors Program</h3>
+            <h3 class="description">The most qualified doctors around the world in various medical specialties</h3>
+          </div>
+          <div class="wrapper">
+            <div class="inner">
+              <div class="item">
+                <div class="img"><img src="images/main/visiting-doctor-program-1.webp"></div>
+                <div class="data-text">
+                  <div class="name">Dr. Muhammad Al-Shafei</div>
+                  <div class="visiting-position"><i class="fas fa-stethoscope"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-hospital"><i class="fas fa-hospital"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-time">Tuesday 2 May 2023 : Thursday 4 May 2023</div><a class="visiting-book" href="#">book an appointment</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img"><img src="images/main/visiting-doctor-program-2.svg"></div>
+                <div class="data-text">
+                  <div class="name">Dr. Muhammad Al-Shafei</div>
+                  <div class="visiting-position"><i class="fas fa-stethoscope"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-hospital"><i class="fas fa-hospital"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-time">Tuesday 2 May 2023 : Thursday 4 May 2023</div><a class="visiting-book" href="#">book an appointment</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img"><img src="images/main/visiting-doctor-program-3.webp"></div>
+                <div class="data-text">
+                  <div class="name">Dr. Muhammad Al-Shafei</div>
+                  <div class="visiting-position"><i class="fas fa-stethoscope"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-hospital"><i class="fas fa-hospital"></i><span>Neurosurgery expert</span></div>
+                  <div class="visiting-time">Tuesday 2 May 2023 : Thursday 4 May 2023</div><a class="visiting-book" href="#">book an appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="btn-all-visiting-doctor-program"><a href="#">All visiting doctors</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Call Us On Whatsapp-->
+      <section class="callWhatsapp">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="data-text">
+                <div class="title">Doctor ?</div>
+                <div class="description">Be a part of Dotcare and share the ease of healthcare with your patients</div>
+                <div class="buttonCall"><a class="main-button" href="https://wa.me/+201101853042" target="_blank"> <i class="fab fa-whatsapp facebook-icon"></i><span>Whats App</span></a></div>
+              </div>
+              <div class="img"><img src="images/main/callWhatsapp-4.webp" alt="alt"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Download App-->
+      <section class="downloadApp">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="data-text">
+                <div class="text">You can book all health services and medical consultations through the <span class="main-color">Dotcare </span>application</div>
+                <div class="img"><img src="images/main/google-play-badge.jfif" alt="alt"><img src="images/main/app-store-badge.jfif" alt="alt"></div>
+              </div>
+              <div class="img"><img src="images/main/download-app-1.webp" alt="alt"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="content">
+              <div class="item">
+                <div class="img"><img src="images/icons/icon.webp" alt="alt"></div>
+                <div class="social"><a href="https://www.facebook.com/profile.php?id=100080473917560" target="_blank"><i class="fab fa-facebook facebook-icon"></i></a><a href="https://www.instagram.com/learn.coding.easy/" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a><a href="https://twitter.com/CodingEasy0100" target="_blank"><i class="fab fa-twitter twitter-icon"></i></a><a href="https://www.buymeacoffee.com/learncodingeasy" target="_blank"><i class="fas fa-coffee coffee-icon"></i></a><a href="https://wa.me/+201101853042" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a></div>
+              </div>
+              <div class="item">
+                <div class="contentWebsite">
+                  <p>Website content</p>
+                </div>
+                <ul class="linksWebsite">
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>Home</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>book an appointment</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>Most frequently asked questions</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>vacant jobs</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>About Website</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>Website for Doctors</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>terms and conditions</span></a></li>
+                  <li><a href="#"> <i class="fas fa-arrow-right iconName-icon"></i><span>privacy policy</span></a></li>
+                </ul>
+              </div>
+              <div class="item">
+                <div class="contactWithUs">
+                  <p class="title">Connect with us</p>
+                </div>
+                <div class="contactWithUsCall"><a href="tel:+201101853042"> <i class="fas fa-phone phone-icon"></i><span>+0201101853042</span></a><a href="mailto:learncodingeasy0100@gmail.com" target="_blank"> <i class="fas fa-envelope phone-icon"></i><span>learncodingeasy0100@gmail.com</span></a><a href="#"> <i class="fas fa-map-marker phone-icon"></i><span>39 Khalil Al-Khayat Kafr Abdo - Alexandria</span></a></div>
+              </div>
+              <div class="item">
+                <div class="subscribe">
+                  <p class="data-text">Subscribe now to the mailing newsletter</p>
+                </div>
+                <div class="subscribe-input">
+                  <input class="form-control" type="text" placeholder="Type Your Email">
+                  <button>subscribe now</button>
+                </div>
+              </div>
+            </div>
+            <!-- Copyright-->
+            <div class="copyright">
+              <p class="text">© All Rights Are Save  <a href="https://learncodingeasy-51672.web.app/" target="_blank"> Learn Coding Easy </a><span class="copyrightYear"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =============== Start Pwa ===============-->
+    <!-- =============== Start Pwa ===============-->
+    <script src="app.js"></script>
+    <!-- =============== End Pwa ===============-->
+    <!-- ================ End Pwa ================-->
+    <!-- =============== Start Pwa ===============-->
+    <!-- Slider-->
+    <script src="js/index/slider.js"></script>
+    <!-- Global Script-->
+    <script src="js/global/global.js"></script>
+    <!-- Website Script-->
+    <script src="js/index/script.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <!-- Firebase Script-->
+    <script type="module">
+      //- لتهيئة التطبيق Firebase   من ال  Object  استدعاء
+      //- Import the functions you need from the SDKs you need
+      //- call Object from the Firebase to Initialize app
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+      
+      
+      //- Your web app's Firebase configuration
+      //- For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAcCwWbrWY4FjFBYkNSp_BQOjNiDoNjbmc",
+        authDomain: "codepwa.firebaseapp.com",
+        projectId: "codepwa",
+        storageBucket: "codepwa.appspot.com",
+        messagingSenderId: "248459805773",
+        appId: "1:248459805773:web:43a36e56a2c70cdb0b4804",
+        measurementId: "G-E310W66C9K"
+      };
+      
+      
+      
+      //- تهيئة التطبيق
+      //- initialize firebase App
+      const app = initializeApp(firebaseConfig);
+      // console.log('app: ', app);
+      
+      
+      
+      
+      
+      // getFirestore   || استيراد قاعدة البيانات 
+      // Collection     || database استيراد المجموعة من 
+      // getDocs        || استيراد بيانات مجموعة محددة 
+      // onSnapshot     || حصول على التحديثات المستمرة على الوثائق في مجموعة محددة
+      // addDoc         || تستخدم لإضافة وثيقة جديدة إلى مجموعة محددة
+      // deleteDoc      || تستخدم لحذف وثيقة محددة من مجموعة محددة
+      // Doc            || تستخدم للحصول على مرجع لوثيقة محددة في مجموعة محددة
+      // Query          || تستخدم لتحديد الاستعلام الذي يستخدم للحصول على مجموعة محددة من الوثائق
+      // Where          || تستخدم لتحديد شرط الاستعلام لاستخراج الوثائق
+      // orderBy        || تستخدم لتحديد الطريقة التي يجب ترتيب بها الوثائق في الاستعلام
+      // serverTimestamp|| تستخدم لإضافة الوقت الحالي في قاعدة البيانات
+      // getDoc         || Firebase Firestore database تستخدم للحصول على وثيقة محددة من 
+      // updateDoc      || Firebase Firestore database تستخدم لتحديث وثيقة محددة في 
+      // enableIndexedDbPersistence|| لتمكين البيانات المتصلة بالشبكة وغير المتصلة بالشبكة
+      
+      import {
+        getFirestore, 
+        collection,
+        getDocs,
+        onSnapshot,
+        addDoc,
+        setDoc,
+        deleteDoc,
+        doc,
+        getDoc,
+        query,
+        where,
+        orderBy,
+        serverTimestamp,
+        updateDoc,
+        enableIndexedDbPersistence,
+      } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js";
+      
+      
+      
+      // getAuth      || Firebase تعيد كائنًا يمكن استخدامه للحصول على معلومات المصادقة في 
+      // signOut      || الحالي Firebase  يستخدم لتسجيل الخروج من حساب 
+      // createUserWithEmailAndPassword||  يستخدم لإنشاء حساب جديد باستخدام عنوان البريد الإلكتروني وكلمة المرور المعطاة.
+      // signInWithEmailAndPassword|| يستخدم لتسجيل الدخول باستخدام البريد الإلكتروني وكلمة المرور.
+      // onAuthStateChanged|| يستخدم لتحديث التطبيق عند تغيير حالة المصادقة لمستخدم 
+      // Firebase، يستمع للتغييرات وينفذ الوظائف المحددة لهذه التغييرات.
+      // updateProfile || تحديث ملف تعريف المستخدم
+      // updatePhoneNumber || تحديث رقم التلفون
+      
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signOut,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        updateProfile,
+        updatePhoneNumber
+      } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+      
+      
+      
+      
+      // getStorage   || استيراد تخزين السحابة 
+      // ref          || اعتبار المرجع كمؤشر لملف في السحابة
+      // uploadBytesResumable ||
+      // 
+      import {
+        getStorage,
+        ref, 
+        uploadBytes,
+        uploadBytesResumable,
+        getDownloadURL 
+      } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js";
+      
+      // init services ( Database ) || تهيئة خدمات قاعدة بيانات
+      const Database = getFirestore();
+      //- console.log("Database: ", Database);
+      
+      // (AUTH) كائن الاتصال من Firebase لتهيئة الخدمات
+      // Call Object From The Firebase To Initialize Services ( Auth )
+      const Auth = getAuth();
+      // console.log("Auth: ", Auth);
+      
+      // احصل على إشارة إلى خدمة التخزين 
+      // ، والتي يتم استخدامها لإنشاء مراجع في دلو التخزين الخاص بك
+      // Get a reference to the storage service, which is used to create references in your storage bucket
+      const storage = getStorage();
+      //- console.log('storage: ', storage);
+      
+      // قم بإنشاء مرجع تخزين من خدمة التخزين لدينا
+      // Create a storage reference from our storage service
+      // const storageRef = ref(storage);
+      //- console.log('storageRef: ', storageRef); 
+      
+      // Get The Collection From Database by Collection Name
+      // احصل على المجموعة من قاعدة البيانات حسب اسم المجموعة
+      // collection ref
+      const colRefUsers = collection(Database, "users");
+      const colRefCreatePostDoctor = collection(Database, "postDoctor");
+      //- console.log("colRef: ", colRef);
+      
+      // IndexedDB فحص إمكانية دعم متصفح الويب لقاعدة بيانات 
+      if ("indexedDB" in window) {
+        console.log("IndexedDB Is Supported In This Browser");
+        enableIndexedDbPersistence(Database)
+          .then(() => {
+            // IndexedDB تمكين البيانات غير المتصلة بالإنترنت 
+            console.log(`Enable Offline Data Successful`);
+          })
+          .catch((err) => {
+            if (err.code === "failed-precondition") {
+              // لا يمكن تمكين الثبات الفاشل إلا في علامة تبويب واحدة في وقت واحد.
+              console.log(
+                "failed persistence can only be enabled in one tab at a time."
+              );
+            } else if (err.code === "unimplemented") {
+              // لا يدعم المتصفح الحالي جميع الميزات المطلوبة لتمكين الثبات
+              console.log(
+                "The current browser does not support all of the features required to enable persistence."
+              );
+            }
+          });
+      } else {
+        // IndexedDB is not supported
+        console.error("IndexedDB is not supported in this browser");
+      }
+      
+      
+      // SignUp
+      // js Form Validate
+      let formSignUp = document.querySelector(`#form-signUp`);
+      let inputPhotoURL = document.querySelector(`#form-signUp [name='inputPhotoURL']`);
+      let inputDisplayNameSignUp = document.querySelector(`#form-signUp [name='inputDisplayName']`);
+      let inputPhoneNumberSignUp = document.querySelector(`#form-signUp [name='inputPhoneNumber']`);
+      let inputEmailSignUp = document.querySelector(`#form-signUp [name='inputEmail']`);
+      let inputPasswordSignUp = document.querySelector(`#form-signUp [name='inputPassword']`);
+      
+      // Form Error
+      let errorFormSignUp = document.querySelector(`.error-form-signUp`);
+      let errorFormTextSignUp = document.querySelector(`.error-form-signUp .inner-error`);
+      let errorFormInputSignUp = document.querySelector(`.error-form-signUp .input-name-error`);
+      let errorFormIconCloseSignUp = document.querySelector(`.error-form-signUp .close-icon`);
+      errorFormIconCloseSignUp.addEventListener(`click`, () => {
+        errorFormSignUp.classList.remove(`error-form-show`);
+      });
+      formSignUp.addEventListener("submit", (e) => {
+        e.preventDefault();
+      
+        // Check Input Validity
+        let displayNameValid = false;
+        let phoneNumberValid = false;
+        let emailValid = false;
+        let passwordValid = false;
+      
+        // Condition => Display Name
+        if (inputDisplayNameSignUp.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignUp.textContent = `Check Display Name`;
+          errorFormTextSignUp.textContent = "Error Display Name Is Empty";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputDisplayNameSignUp.value.length <= 10) {
+          // Condition || Input Value Length Smaller Than 10 Chars
+          errorFormInputSignUp.textContent = `Check Display Name`;
+          errorFormTextSignUp.textContent = "Error Display Name Is Smaller Than 10 Chars";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputDisplayNameSignUp.value !== ``) {
+          //=> All Condition Is Ok
+          displayNameValid = true;
+        }
+      
+        // Condition => Phone Number
+        if (inputPhoneNumberSignUp.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignUp.textContent = `Check Phone Number`;
+          errorFormTextSignUp.textContent = "Error Phone Number Is Empty";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputPhoneNumberSignUp.value.length <= 10) {
+          // Condition || Input Value Length Smaller Than 10 Chars
+          errorFormInputSignUp.textContent = `Check Phone Number`;
+          errorFormTextSignUp.textContent = "Error Phone Number Is Smaller Than 10 Chars";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputPhoneNumberSignUp.value !== ``) {
+          //=> All Condition Is Ok
+          phoneNumberValid = true;
+        }
+      
+        //=> التحقق من صحة البريد الإلكتروني
+        //=> Email Validation
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (inputEmailSignUp.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignUp.textContent = `Check Email`;
+          errorFormTextSignUp.textContent = "Error Email Is Empty";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (!regex.test(inputEmailSignUp.value)) {
+          //=> Condition: Input Email Validation
+          errorFormInputSignUp.textContent = `Check Email`;
+          errorFormTextSignUp.textContent = "The Email Is Not Valid";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputEmailSignUp.value !== ``) {
+          //=> All Condition Is Ok
+          emailValid = true;
+        }
+      
+        //=> Password Condition 
+        if (inputPasswordSignUp.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignUp.textContent = `Check Password`;
+          errorFormTextSignUp.textContent = "Error Password Is Empty";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputPasswordSignUp.value.trim().length <= 10) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignUp.textContent = `Check Password`;
+          errorFormTextSignUp.textContent =
+            "Error Password Must To Be Greater Than 10 Characters";
+          errorFormSignUp.classList.add(`error-form-show`);
+        } else if (inputPasswordSignUp.value.trim() !== ``) {
+          //=> All Condition Is Ok
+          passwordValid = true;
+        }
+      
+        if (displayNameValid === true && phoneNumberValid === true && emailValid === true && passwordValid === true) {
+          //- Input Value
+          const filePhotoURL = formSignUp.inputPhotoURL.files[0];
+          const photoURL = formSignUp.inputPhotoURL.files[0];
+          const displayName = formSignUp.inputDisplayName.value;
+          const phoneNumber = formSignUp.inputPhoneNumber.value;
+          const email = formSignUp.inputEmail.value;
+          const password = formSignUp.inputPassword.value;
+          const downloadURLUser = ``;
+          console.log('downloadURLUser: ', downloadURLUser);
+          //-  SignUp Use 
+          // تسجيل الدخول عن طريق الايميل وكلمة المرور
+          createUserWithEmailAndPassword(Auth, email, password)
+            .then((userCredential) => {
+              const currentUser = userCredential;
+              //- console.log('currentUser: ', currentUser);
+              // userCredential || بيانات اعتماد المستخدم
+              const user = userCredential.user;
+              //- console.log("user created:", user);
+              const uid = user.uid;
+              //- console.log('uid: ', uid);
+              // تغيير اسم العرض إذا لزم الأمر
+              if (inputDisplayNameSignUp) {
+                updateProfile(user, { displayName: displayName });
+              }
+              // تغيير رقم الهاتف إذا لزم الأمر
+              if (phoneNumber) {
+                updatePhoneNumber(user, phoneNumber).then(() => {
+                  console.log("Phone number updated successfully");
+                });
+              }
+              // Upload User Photo To Firebase Storage And Update User Profile PhotoURL
+              if (photoURL) {
+                /*
+                // Create the file metadata
+                const metadata = {
+                  contentType: filePhotoURL.type
+                };
+                const storageRef = ref(storage, `users/${uid}/profile_photo`);
+                const uploadTask = uploadBytesResumable(storageRef, filePhotoURL, metadata);
+                // Listen for state changes, errors, and completion of the upload.
+                uploadTask.on('state_changed', (snapshot) => {
+                  // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                  const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                  console.log('Upload is ' + progress + '% done');
+                },(error) => {
+                  console.log(`Error Catch Message`, error.message);
+                }, () => {
+                  // Handle successful uploads on complete
+                  // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+                  getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+                    console.log('File available at', downloadURL);
+                    //- downloadURLUser = downloadURL;
+                  });
+                });
+                updateProfile(user, { photoURL: downloadURLUser });
+                */
+                const storageRef = ref(storage, `users/${uid}/profile_photo`);
+                console.log('storageRef: ', storageRef);
+                uploadBytes(storageRef, photoURL).then((snapshot) => {
+                  getDownloadURL(snapshot.ref).then((downloadURL) => {
+                    console.log('downloadURL: ', downloadURL);
+                    //- Add User To Collection Users
+                    // تمرير مسار المستند الخاص بالمستخدم
+                    const userRef = doc(colRefUsers, uid); 
+                    // object إنشاء  تاريخ ووقت
+                    const now = new Date();
+                    const objectCreatedAt = {
+                      date: now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear(),
+                      time: now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds()
+                    };
+                    //- console.log('objectCreatedAt: ', objectCreatedAt);
+                    //- console.log('objectCreatedAt: ', `${objectCreatedAt.date}/${objectCreatedAt.time}`);
+                    setDoc(userRef, {
+                      photoURL: downloadURL,
+                      displayName: displayName,
+                      phoneNumber: phoneNumber,
+                      email: email,
+                      password: password,
+                      useId: uid,
+                      createdAt: serverTimestamp(),
+                      obCreatedAt: objectCreatedAt,
+                    }) 
+                      .then(() => {
+                        formSignUp.reset();
+                      })
+                      .catch((error) => {
+                        console.log(error)
+                        });
+      
+                  });
+                });
+              }
+      
+              let sectionSignUp = document.querySelector(`body section.signUp`);
+              sectionSignUp.classList.toggle(`show-signUp`);
+              //- errorForm.classList.toggle(`error-form-show`);
+            })
+            .catch((error) => {
+              errorFormInputSignUp.textContent = `Check Error`;
+              errorFormTextSignUp.textContent = `The Error Is ${error.message}`;
+              errorFormSignUp.classList.add(`error-form-show`);
+              console.log(`Error Catch Code`, error.code);
+              console.log(`Error Catch Message`, error.message);
+            });
+      
+        }
+        if (displayNameValid === false || phoneNumberValid === false || emailValid === false || passwordValid === false) {
+          event.preventDefault();
+        }
+      });
+      
+      /* <button class="logout ">logout</button> */
+      // logging  out
+      const logoutButton = document.querySelector(".logout");
+      logoutButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        signOut(Auth)
+          .then(() => {
+            console.log("User Signed Out This Massage From Button Log Out");
+          })
+          .catch((err) => {
+            console.log(err.message);
+          });
+      });
+      
+      
+      // SignIn
+      // js Form Validate
+      let formSignIn = document.querySelector(`#form-signIn`);
+      let emailInputSignIn = document.querySelector(`#form-signIn [name='email']`);
+      let passwordInputSignIn = document.querySelector(`#form-signIn [name='password']`);
+      
+      // Form Error
+      let errorFormSignIn = document.querySelector(`#form-signIn .error-form-signIn`);
+      let errorFormTextSignIn = document.querySelector(`#form-signIn .error-form-signIn .inner-error`);
+      let errorFormInputSignIn = document.querySelector(`#form-signIn .error-form-signIn .input-name-error`);
+      let errorFormIconCloseSignIn = document.querySelector(`#form-signIn .error-form-signIn .close-icon`);
+      errorFormIconCloseSignIn.addEventListener(`click`, () => {
+        errorFormSignIn.classList.remove(`error-form-show`);
+      });
+      
+      //- Sign In
+      formSignIn.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // Check Input Validity
+        let emailValid = false;
+        let passwordValid = false;
+      
+        //=> التحقق من صحة البريد الإلكتروني
+        //=> Email Validation
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (emailInputSignIn.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignIn.textContent = `Check Email`;
+          errorFormTextSignIn.textContent = "Error Email Is Empty";
+          errorFormSignIn.classList.add(`error-form-show`);
+        } else if (!regex.test(emailInputSignIn.value)) {
+          //=> Condition: Input Email Validation
+          errorFormInputSignIn.textContent = `Check Email`;
+          errorFormTextSignIn.textContent = "The Email Is Not Valid";
+          errorFormSignIn.classList.add(`error-form-show`);
+        } else if (emailInputSignIn.value !== ``) {
+          //=> All Condition Is Ok
+          emailValid = true;
+        }
+        //=> Password Condition
+        if (passwordInputSignIn.value === ``) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignIn.textContent = `Check Password`;
+          errorFormTextSignIn.textContent = "Error Password Is Empty";
+          errorFormSignIn.classList.add(`error-form-show`);
+        } else if (passwordInputSignIn.value.trim().length <= 10) {
+          //=> Condition: Input Is Not Empty
+          errorFormInputSignIn.textContent = `Check Password`;
+          errorFormTextSignIn.textContent =
+            "Error Password Must To Be Greater Than 10 Characters";
+          errorFormSignIn.classList.add(`error-form-show`);
+        } else if (passwordInputSignIn.value.trim() !== ``) {
+          passwordValid = true;
+        }
+        //=> All Condition Is Ok
+        if (emailValid === true && passwordValid === true) {
+          //- Input Value
+          const email = formSignIn.email.value;
+          const password = formSignIn.password.value;
+      
+          //-  SignUp Use 
+          signInWithEmailAndPassword(Auth, email, password)
+            .then((cred) => {
+              console.log("user Sign In Again:", cred.user);
+              let sectionSignIn = document.querySelector(`body section.signIn`);
+              sectionSignIn.classList.toggle(`show-signIn`);
+              errorFormSignIn.classList.toggle(`error-form-show`);
+              formSignIn.reset();
+            })
+            .catch((err) => {
+              passwordInputSignIn.textContent = `Check Email`;
+              errorFormTextSignIn.textContent = `The Email Is ${err.message}`;
+              errorFormSignIn.classList.add(`error-form-show`);
+              console.log(err.message);
+            });
+        }
+        if (emailValid === false || passwordValid === false) {
+          console.log("emailValid: ", emailValid);
+          console.log("passwordValid: ", passwordValid);
+          event.preventDefault();
+        }
+      });
+      
+      
+      
+      
+      // Subscribing To Auth Changes  
+      onAuthStateChanged(Auth, (user) => {
+        if(user){
+          //- console.log("User Status Changed:", user);
+          const userRefUid = doc(Database, "users", user.uid); 
+          //- console.log('user.uid: ', user.uid);
+          //- console.log('userRefUid: ', userRefUid);
+          //- console.log('userRefUid: ', userRefUid);
+      
+          onSnapshot(userRefUid, (doc) => {
+            //- console.log('doc: ', doc); console.log('doc Data: ', doc.data()); console.log('doc: Id', doc.id);
+            const { photoURL, displayName, phoneNumber, email } = doc.data();
+      
+            // Section Profile Detils
+            let profileDetails = document.querySelector('body .profile .box-profile');
+            let innerProfileBox  = document.createElement(`div`);;
+            innerProfileBox.innerHTML = `
+              <div class="img-displayName">
+                <div class="img">
+                  <label class="form-label" for="box-profile-img">PhotoURL</label>
+                  <img class="box-profile-img" alt="Profile Image" id="box-profile-img" src="${photoURL}">
+                </div>
+                <div class="displayName">
+                  <label class="form-label" for="inputDisplayNameUser">displayName</label>
+                  <input class="form-control" type="text" name="inputDisplayNameUser" id="inputDisplayNameUser" value="${displayName}">
+                </div>
+              </div>
+              <div class="phoneNumber-email-password">
+                <div class="phoneNumber">
+                  <label class="form-label" for="inputPhoneNumberUser">PhotoURL</label>
+                  <input class="form-control" type="tel" name="inputPhoneNumberUser" id="inputPhoneNumberUser" value="${phoneNumber}">
+                </div>
+                <div class="email">
+                  <label class="form-label" for="inputEmailUser">Email</label>
+                  <input class="form-control" type="text" name="inputEmailUser" id="inputEmailUser" value="${phoneNumber}">
+                </div>
+                <div class="password">
+                  <label class="form-label" for="inputPasswordUser">password</label>
+                  <input class="form-control" type="text" name="inputPasswordUser" id="inputPasswordUser">
+                </div>
+              </div>
+              <div class="add-change-user">
+                <button class="send-change-user">send-change-user</button>
+              </div>`;
+            //- let profileImage = document.querySelector('body .profile .box-profile-img');
+            //- let profileDisplayName = document.querySelector('body .profile #inputDisplayNameUser');
+            //- profileImage.src = photoURL;
+            //- profileDisplayName.value = displayName;
+            if (!profileDetails) {
+              console.error('No element found with ID "profile-details"');
+            } else {
+              profileDetails.appendChild(innerProfileBox);
+            }
+          });
+      
+      
+          //- Four Links Header Profile
+          if(user.displayName !== null){
+            document.querySelector("body .profile-menu-name").innerHTML = user.displayName;
+          }
+      
+          // 
+          if(user.photoURL !== null){
+            document.querySelector(".profile-menu-image").src = user.photoURL;
+          } 
+          //- let docRef = doc(Database, "users", user.uid, "postsDoctor");
+          //- let docRef = doc(Database, "users", user.uid);
+          let colRefUsersUid = doc(colRefUsers, user.uid); 
+          //- console.log('colRefUsersUid: ', colRefUsersUid);
+          //- console.log('user.uid: ', colRefUsersUid);
+          let line = "📌".repeat(30);
+          //- console.log('colRefUsersUid: ', colRefUsersUid);
+          //- console.log(` %c${line} `, "color: #1cd07c; font-size: 16px");
+      
+          // Variables Create Post
+          let formCreatePost = document.querySelector(`#form-createPost`);
+          let inputSelectImagesCreatePost = document.querySelector(`#form-createPost #inputSelectImages`);
+          let inputTitlePostCreatePost = document.querySelector(`#form-createPost #inputTitlePost`);
+          let inputDescriptionPostCreatePost = document.querySelector(`#form-createPost #inputDescriptionPost`);
+          let selectPurviewCreatePost = document.querySelector(`#form-createPost #selectPurview`);
+          let selectReadingCreatePost = document.querySelector(`#form-createPost #selectReading`);
+      
+          // Massage Error Create Post
+          let errorFormCreatePost = document.querySelector(`#form-createPost .error-form-createPost`);
+          let errorFormTextCreatePost = document.querySelector(`#form-createPost .error-form-createPost .inner-error`);
+          let errorFormInputCreatePost = document.querySelector(`#form-createPost .error-form-createPost .input-name-error`);
+          let errorFormIconCloseCreatePost = document.querySelector(`#form-createPost .error-form-createPost .close-icon`);
+      
+          // Preview Create Post
+          let viewImagesCreatePost = document.querySelector(`.view-post #view-post-images`);
+          let viewUploadProgressCreatePosts = document.querySelector(`.view-post .view-post-ImgUploadProgress`);
+          let viewTitleCreatePost = document.querySelector(`.view-post .view-post-title`);
+          let viewDescriptionCreatePost = document.querySelector(`.view-post .view-post-description`);
+          let viewPurviewCreatePost = document.querySelector(`.view-post .view-post-purview`);
+          let viewReadingCreatePost = document.querySelector(`.view-post .view-post-reading`);
+      
+      
+          // Close Error
+          errorFormIconCloseCreatePost.addEventListener(`click`, () => {
+            errorFormCreatePost.classList.remove(`error-form-show`);
+          });
+      
+          // On Input To Type Text & Select Get Value To Show On Div View Post
+          inputSelectImagesCreatePost.addEventListener('blur', (event) => {
+            var img = document.createElement(`img`);
+              img.src = event.target.value;
+              viewImagesCreatePost.append(img);
+          });
+          inputTitlePostCreatePost.addEventListener('input', (event) => {
+            viewTitleCreatePost.innerHTML = event.target.value;
+          });
+          inputDescriptionPostCreatePost.addEventListener('input', (event) => {
+            viewDescriptionCreatePost.innerHTML = event.target.value;
+          });
+          selectPurviewCreatePost.addEventListener('input', (event) => {
+            viewPurviewCreatePost.innerHTML = event.target.value;
+          });
+          selectReadingCreatePost.addEventListener('input', (event) => {
+            viewReadingCreatePost.innerHTML = event.target.value;
+          });
+      
+          formCreatePost.addEventListener(`submit`, (e)=>{
+            // Check Input Validity
+            let imageValid = false;
+            let titleValid = false;
+            let descriptionValid = false;
+            let purviewValid = false;
+            let readingValid = false;
+      
+            // User Id
+            let colRefUsersUid =  collection(Database, "users", user.uid);
+            //- console.log('colRefUsersUid: ', colRefUsersUid);
+      
+            // Condition => The Images Logger Then 0
+            if (inputSelectImagesCreatePost.value <= 0) {
+              errorFormInputCreatePost.textContent = `Check Image`;
+              errorFormTextCreatePost.textContent = "Error Image Is Empty";
+              errorFormCreatePost.classList.add(`error-form-show`);
+            } else if (inputSelectImagesCreatePost.value >= 1) {
+              imageValid = true;
+            }
+            // Condition => Title Post
+            if (inputTitlePostCreatePost.value === ``) {
+              // Condition || Input Is Not Empty
+              errorFormInputCreatePost.textContent = `Check Title`;
+              errorFormTextCreatePost.textContent = "Error Title Is Empty";
+              errorFormCreatePost.classList.add(`error-form-show`);
+            } else if (inputTitlePostCreatePost.value.length <= 10) {
+              // Condition || Input Value Length Smaller Than 10 Chars
+              errorFormInputCreatePost.textContent = `Check Title`;
+              errorFormTextCreatePost.textContent = "Error Title Is Smaller Than 10 Chars";
+              errorFormCreatePost.classList.add(`error-form-show`);
+            } else if (inputTitlePostCreatePost.value !== ``) {
+              //=> All Condition Is Ok
+              titleValid = true;
+            }
+            // Condition => Description Post
+            if (inputDescriptionPostCreatePost.value === ``) {
+              // Condition || Input Is Not Empty
+              errorFormInputCreatePost.textContent = `Check Title`;
+              errorFormTextCreatePost.textContent = `Error Description Is Empty`;
+              errorFormCreatePost.classList.add(`error-form-show`);
+            } else if (inputDescriptionPostCreatePost.value.length <= 10) {
+              // Condition || Input Value Length Smaller Than 10 Chars
+              errorFormInputCreatePost.textContent = `Check Description`;
+              errorFormTextCreatePost.textContent = "Error Description Is Smaller Than 10 Chars";
+              errorFormCreatePost.classList.add(`error-form-show`);
+            } else if (inputDescriptionPostCreatePost.value !== ``) {
+              //=> All Condition Is Ok
+              descriptionValid = true;
+            }
+            // Condition => Purview Post
+            if (viewPurviewCreatePost.value !== ``) {
+              purviewValid = true;
+            }
+            // Condition => Reading Post
+            if (viewReadingCreatePost.value !== ``) {
+              readingValid = true;
+            }
+      
+            // => All Condition Is Ok
+            if (imageValid === true && titleValid === true && descriptionValid === true && purviewValid === true && readingValid === true) {
+              let title = formCreatePost.inputTitlePost.value;
+              let description = formCreatePost.inputTitlePost.value;
+              let purview = formCreatePost.selectPurview.value;
+              let reading = formCreatePost.selectReading.value;
+              //- Add User To Collection Create Post
+              let userRef = doc(Database, "users", userId);
+              let line = "📌".repeat(30);
+              console.log(` %c${line} `, "color: #1cd07c; font-size: 16px");
+              console.log('userRef: ', userRef);
+              console.log(` %c${line} `, "color: #1cd07c; font-size: 16px");
+              event.preventDefault();
+            }
+            // Prevent Default || Send Form Post
+            if(imageValid === false ||titleValid === false || descriptionValid === false || purviewValid === false || readingValid === false){
+              event.preventDefault();
+            } 
+          });
+      
+          // => Setup Profile Ui User
+          //- setupProfileUi(user);
+          const loggedUsers  = document.querySelectorAll('body .logged-user');
+          loggedUsers.forEach(item => item.style.display = 'block');
+          const notLoggedUsers = document.querySelectorAll('body .not-logged-user');
+          notLoggedUsers.forEach(item => item.style.display = 'none');
+      
+        } else {
+          document.querySelector("body .profile-menu-name").innerHTML = 'Unknown Name';
+          console.log("User Signed Out From Subscribing To Auth Changes");
+          document.querySelector("body .profile-menu-image").src = `https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png`;
+          //- setupProfileUi([]);
+          const loggedUsers  = document.querySelectorAll('body .logged-user');
+          loggedUsers.forEach(item => item.style.display = 'none');
+          const notLoggedUsers = document.querySelectorAll('body .not-logged-user');
+          notLoggedUsers.forEach(item => item.style.display = 'block');
+        }
+      });
+      let inner = document.querySelectorAll('body .profile .box-profile');
+      function showuserDetils(movies) {
+        movies.forEach((movie) => {
+          const { title, imgUrl, id } = movie;
+          let movieEl = document.createElement("div");
+          movieEl.classList.add("movie");
+          movieEl.innerHTML = `
+          <img src="${imgUrl}" alt="${title}" />
+          <div class="title">${title}</div>
+          <span class='delete-icon' data-id='${id}'>
+            <i class="fas fa-trash"></i>
+          </span>
+          `;
+          inner.appendChild(movieEl);
+        });
+      }
+      
+      
+      // Short Title
+      //- function getShortTitle() {
+      //-   let Title = inputTitlePost.value.substring(0,50);
+      //-   return Title.replace(/[^a-zA-Z0-9]/g,"");
+      //- }
+      
+      //
+      //- function GetImgUploadProgress(){
+      //-   return `Images Upload ${ImagesLinksArray.length} Of ${Files.length}`;
+      //- }
+      
+      //
+      //- function IsAllImagesUploaded(){
+      //-   return ImagesLinksArray.length ==  Files.length;
+      //- }
+      
+      
+      // تحميل جميع الصور إلى Firebase Storage
+      //- function uploadAllImages(imgToUpload, imgNumber) {
+      //-   // بيانات الوصف
+      //-   let metadata = { contentType: imgToUpload.type };
+      //-   // الحصول على مسار التخزين للصورة
+      //-   let imageAddress = `TheImages/${getShortTitle()}/img#${imgNumber + 1}`;
+      //-   const storage = getStorage();
+      //-   const storageRef = ref(storage, imageAddress);
+      
+      //-   // رفع الملف والوصف
+      //-   const uploadTask = uploadBytesResumable(storageRef, imgToUpload, metadata);
+      
+      //-   // تحديث حالة تحميل الصورة
+      //-   uploadTask.on(`state_changed`, (snapshot) => {
+      //-     ImgUploadProgress.innerHTML = GetImgUploadProgress();
+      //-   },
+      //-     // عرض رسالة خطأ في حالة فشل تحميل الصورة
+      //-     (error) => {
+      //-       alert(`Error: Image Upload Failed`);
+      //-     },
+      //-     // عرض رابط الصورة بعد رفعها بنجاح وإضافتها إلى قائمة روابط الصور
+      //-     () => {
+      //-       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+      //-         ImagesLinksArray.push(downloadURL);
+      //-         // إذا تم رفع جميع الصور بنجاح، فعرض رسالة تأكيد
+      //-         if (IsAllImagesUploaded) {
+      //-           ImgUploadProgress.innerHTML = ` All Images Uploaded `;
+      //-         }
+      //-       })
+      //-     });
+      //- }
+      
+      
+      
+      
+      /*
+      formCreatePost.addEventListener(`submit`, (e) => {
+        // References 
+        // Files الملفات التى  ستحتفظ بصورنا
+        //- let Files = [];
+        // قارئات الملفات التي ستحتفظ ببعض الأحداث المطلوبة للصور لإظهار
+        //- let FileReaders = [];
+        // روابط الصور
+        //- let ImagesLinksArray = [];
+      
+      
+        // Function || إنشاء فانكشان لفتح  لانشاء حقل الفيل لاختيار الملف
+        //- function OpenFileDialog(){
+        //-   let inp = document.createElement(`input`);
+        //-   inp.type = `file`
+        //-   inp.multiple = `multiple`
+        //-   inp.onchange = (e)=>{
+        //-     AssignImagesToFilesArray(e.target.files);
+        //-     CreateImgTags();
+        //-   }
+        //-   inp.click();
+        //- }
+      
+        // Function => Choose How Many Image You Want To Upload
+        //- function AssignImagesToFilesArray(theFiles){
+        //-   let howManyImage = Files.length + theFiles.length; 
+        //-   let loopLim = howManyImage <= 10 ? theFiles.length : 10 - Files.length;
+        //-   for(let i =0; i < loopLim; i++){
+        //-     Files.push(theFiles[i]);
+        //-   } 
+        //-   if(howManyImage > 10) {
+        //-     // Condition || Input Value Length Smaller Than 10 Chars
+        //-     errorFormInputCreatePost.textContent = `Check Choose File`;
+        //-     errorFormTextCreatePost.textContent = "Error File Maximum 10 Images Are Allowed!";
+        //-     errorFormCreatePost.classList.add(`error-form-show`);
+        //-   }
+        //- }
+      
+        // Function || To View Image On Div View Image
+        //- function CreateImgTags(){
+        //-   viewImagesCreatePost.innerHTML=``;
+        //-   for(let i = 0; i< Files.length; i++ ){
+        //-     FileReaders[i] = new FileReader();
+        //-     FileReaders[i].onload = function(){
+        //-       var img = document.createElement(`img`);
+        //-       img.id = `imgNo${i}`;
+        //-       img.classList.add(`img`);
+        //-       img.src = FileReaders[i].result;
+        //-       viewImagesCreatePost.append(img);
+        //-     }
+        //-     FileReaders[i].readAsDataURL(Files[i]);
+        //-   }
+        //- }
+      
+        // Open Function => Choose Image & View Image
+        //- buttonSelectImagesCreatePost.addEventListener(`click`, OpenFileDialog);
+      
+      
+      
+      
+          console.log(`Good Is`);
+          event.preventDefault();
+      
+      
+          addDoc(colRefCreatePostDoctor, {
+            imageUrl: UploadAllImages,
+            title: title,
+            description: inputDescriptionPost,
+            purview: purview,
+            reading: reading,
+            createdAt: serverTimestamp(),
+          })
+            .then(() => {
+              formCreatePost.reset();
+              let sectionCreatePost = document.querySelector(`section[class='signUp']`);
+              sectionCreatePost.classList.toggle(`show-signUp`);
+            })
+            .catch((error) => {
+              console.log(error)
+              errorFormInputCreatePost.textContent = `Check Form Create Post`;
+              errorFormTextCreatePost.textContent = `Error ${error}`;
+              errorFormCreatePost.classList.add(`error-form-show`);
+            });
+      
+        }
+      
+      
+        });
+      */
+    </script>
+    <!-- ================ End Pwa ================-->
+  </body>
+</html>

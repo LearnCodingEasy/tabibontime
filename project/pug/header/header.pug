@@ -1,0 +1,149 @@
+
+//- Header
+//- header(class="header" id="header")
+//- nav(class="navbar navbar-expand-lg")
+//-   div(class="container")
+//-     a(class="navbar-brand" href="#") 
+//-       img(src="images/icons/icon.webp" alt="")
+//-     button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+//-       span(class="navbar-toggler-icon")
+//-     div(class="collapse navbar-collapse" id="navbarSupportedContent")
+//-       ul(class="navbar-nav nav-menu me-auto mb-2 mb-lg-0 ")
+//-         li(class="nav-item")
+//-           a(class="nav-link active" aria-current="page" href="index.html" data-href="home") Home
+//-         li(class="nav-item")
+//-           a(class="nav-link" href="about.html" data-href="about") About
+
+//-         li(class="nav-item")
+//-           a(class="nav-link" data-href="contactUs" href="contactUs.html") Contact Us
+
+  //- li(class="nav-item")
+  //-   a(class="nav-link" href="signIn.html") SignIn
+
+  //- li(class="nav-item")
+  //-   a(class="nav-link" href="signUp.html") SignUp
+
+  //- هرجع اشيلها وحط فى البرفيل 
+  //- li(class="nav-item")
+  //-   a(class="nav-link logout" href="") logout
+
+
+
+
+
+  //- div(class="profile-menu")
+  //-   button(class="profile-menu-button")
+  //-     img(src="https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png" class="profile-menu-image" alt="Profile Menu Image")
+  //-     span(class="profile-menu-status") 
+  //-   ul(class="profile-menu-ul")
+  //-     li(class="profile-menu-li logged-in")
+  //-       a(class="profile-menu-a profile-page" href="#") 
+  //-         i(class="fas fa-user profile-menu-icon")
+  //-         span(class="profile-menu-text") Profile
+  //-     li(class="profile-menu-li logged-in")
+  //-       a(class="profile-menu-a logout profile-logOut" href="#") 
+  //-         i(class="fas fa-sign-out-alt profile-menu-icon")
+  //-         span(class="profile-menu-text") LogOut
+  //-     li(class="profile-menu-li logged-out")
+  //-       a(class="profile-menu-a  profile-signUp" href="signUp.html") 
+  //-         i(class="fas fa-sign-in-alt profile-menu-icon")
+  //-         span(class="profile-menu-text") SignUp
+  //-     li(class="profile-menu-li logged-out")
+  //-       a(class="profile-menu-a  profile-LogIn" href="signIn.html") 
+  //-         i(class="fas fa-sign-in-alt profile-menu-icon")
+  //-         span(class="profile-menu-text") LogIn
+
+
+
+
+
+header(class="header" id="header")
+  nav(class="navbar" id="navbar")
+    div(class="navbar-container container")
+
+      // Logo
+      div(class="navbar-logo-div")
+        a(href="index.html" class="navbar-logo-a")
+          img(src="images/icons/icon.webp" class="navbar-logo-image" alt="Navbar Logo")
+          span(class="navbar-logo-text")
+            i(class="fas fa-stethoscope navbar-logo-text-icon")
+            span(class="navbar-logo-text-content") Tabib On Line
+
+      // Menu
+      div(class="navbar-menu-div" id="navbar-menu-div")
+        ul(class="navbar-menu-list-ul")
+          li(class="navbar-menu-list-li")
+            a(href="index.html" class="navbar-menu-list-a")
+              span(class="navbar-menu-list-text") Home 
+              i(class="fas fa-stethoscope navbar-menu-list-icon")
+          li(class="navbar-menu-list-li")
+            a(href="about.html" class="navbar-menu-list-a")
+              span(class="navbar-menu-list-text") About 
+              i(class="fas fa-address-card navbar-menu-list-icon")
+          li(class="navbar-menu-list-li")
+            a(href="services.html" class="navbar-menu-list-a")
+              span(class="navbar-menu-list-text") services 
+              i(class="fab fa-servicestack navbar-menu-list-icon")
+          li(class="navbar-menu-list-li")
+            a(href="index.html" class="navbar-menu-list-a")
+              span(class="navbar-menu-list-text") Team 
+              i(class="fas fa-file-signature navbar-menu-list-icon")
+          li(class="navbar-menu-list-li")
+            a(href="contact.html" class="navbar-menu-list-a")
+              span(class="navbar-menu-list-text") contact 
+              i(class="fas fa-file-signature navbar-menu-list-icon")
+
+      // Profile Menu
+      div(class="profile-menu")
+        div(class="profile-menu-wrapper")
+          div(class="profile-menu-inner")
+            label(for="profile2" class="profile-menu-label-parent")
+              input(type="checkbox" id="profile2" class="profile-menu-input-checkbox")
+              img(src="https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png" class="profile-menu-image" alt="Profile Menu Image")
+              span(class="profile-menu-name") 
+              label(for="profile2")
+                i(class="fas fa-bars") 
+              ul(class="profile-menu-ul")
+                li(class="profile-menu-li logged-user")
+                  a(class="profile-menu-a profile-page" data-href="profile" href="#") 
+                    i(class="fas fa-user profile-menu-icon")
+                    span(class="profile-menu-text") Profile
+                li(class="profile-menu-li logged-user")
+                  a(class="profile-menu-a profile-logOut" data-href="createPost" href="#") 
+                    i(class="fas fa-plus profile-menu-icon")
+                    span(class="profile-menu-text") Create Post
+                li(class="profile-menu-li logged-user")
+                  a(class="profile-menu-a logout profile-logOut" data-href="logout" href="#") 
+                    i(class="fas fa-sign-out-alt profile-menu-icon")
+                    span(class="profile-menu-text") Log Out
+                li(class="profile-menu-li not-logged-user")
+                  a(class="profile-menu-a  profile-signUp" data-href="signUp" href="#") 
+                    i(class="fas fa-sign-in-alt profile-menu-icon")
+                    span(class="profile-menu-text") Sign Up
+                li(class="profile-menu-li not-logged-user")
+                  a(class="profile-menu-a  profile-LogIn" data-href="signIn" href="#") 
+                    i(class="fas fa-sign-in-alt profile-menu-icon")
+                    span(class="profile-menu-text") Log In
+                // Theme  
+                li(class="profile-menu-li profile-menu-li-theme") 
+                  ul(class="profile-menu-li-theme-ul")
+                    li(class="profile-menu-li-theme-ul-li active-theme" data-theme-name="light-theme")
+                      span(class="profile-menu-li-theme-data-text") Light
+                      i(class="fas fa-sun profile-menu-li-theme-icon")
+                    li(class="profile-menu-li-theme-ul-li" data-theme-name="dark-theme")
+                      span(class="profile-menu-li-theme-data-text") Dark
+                      i(class="fas fa-moon profile-menu-li-theme-icon")
+                  //- Four Label And Input
+                  //- input(type="checkbox" id="dark-mode-toggle")
+                  //- label(for="dark-mode-toggle")
+                  //- 
+                  //- input(type="checkbox" id="dark-mode-toggle")
+                  //- label(for="dark-mode-toggle")
+                  //-   i(class="fas fa-sun ")
+                  //-   i(class="fas fa-moon ")
+
+
+
+      // Navbar Toggle
+      div(class="navbar-toggle" id="navbar-toggle")
+        i(class="fas fa-bars")

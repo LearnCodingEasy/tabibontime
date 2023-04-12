@@ -1,0 +1,3 @@
+# Libs Javascript
+# npm install firebase gulp-webpack webpack webpack-stream --save-dev
+# npm install firebase @firebase/app @firebase/auth --save-dev

@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    include head/head.pug
+    //- script( async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5731601945951843" crossorigin="anonymous")
+
+  body 
+    include header/header.pug
+
+    include global/global.pug
+    include slider/slider.pug
+    include main/main.pug
+    //- div(id="map" style="height: 500px; width: 100%;")
+    //- button(id="directions") Directions
+
+    include footer/footer.pug
+
+    //- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&language=ar&region=EG")
+    // =============== Start Pwa ===============
+    include pwa/script.pug
+    // ================ End Pwa ================
+
+    // =============== Start Pwa ===============
+    include index/script.pug
+    // ================ End Pwa ================
+
+
+

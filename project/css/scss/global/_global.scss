@@ -1,0 +1,457 @@
+/*
+===========================================================
+Todo ================= VARIABLES CSS ====================== 
+===========================================================
+*/
+
+:root {
+  /* ========== Colors ========== */
+  /*
+  Hsl 
+  hsl(33, 93%, 54%);
+  1 => Color <=> هي درجة على عجلة الألوان من 0 إلى 360. 0 أحمر ، 120 أخضر ، 240 أزرق
+  2 => Saturation <=> التشبع هو قيمة النسبة المئوية ؛ 0٪ تعني ظل رمادي و 100٪ لون كامل
+  3 => lightness <=> الخفة هي أيضا نسبة ؛ 0٪ أسود ، 100٪ أبيض
+  Hsla 
+  3 => Opacity <=> الشفافية هي درجة على عجلة الألوان من 1 إلى 0
+  hsla(33, 93%, 54%, 0.500);
+   */
+
+  --hue-color: 215;
+
+  /* ========== Colors========== */
+  --color-first: hsl(var(--hue-color), 93%, 54%);
+  --color-first-light: hsla(var(--hue-color), 93%, 54%, 0.725);
+  --color-second: hsl(33, 98%, 58%);
+  --color-second-light: hsla(var(--hue-color), 93%, 54%, 0.725);
+  --color-third: hsl(var(--hue-color), 60%, 17%);
+  --color-third-light: hsla(var(--hue-color), 60%, 60%, 0.795);
+
+  // Body
+  // #EEF0F2
+  --color-body: hsl(var(--hue-color), 2%, 93%);
+  --color-container: hsl(var(--hue-color), 93%, 100%);
+  --font-family-body: "Arimo", sans-serif;
+
+  // footer
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-footer: hsl(var(--hue-color), 93%, 54%);
+
+  // Title
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-title: hsl(var(--hue-color), 93%, 54%);
+  --color-first-title-light: hsla(var(--hue-color), 93%, 54%, 0.795);
+  // White
+  --color-second-title: hsl(var(--hue-color), 93%, 100%);
+  --color-second-title-light: hsla(var(--hue-color), 93%, 100%, 0.795);
+  // Black
+  --color-third-title: hsl(var(--hue-color), 93%, 5%);
+  --color-third-title-light: hsla(var(--hue-color), 93%, 5%, 0.795);
+  --font-family-title: "Raleway", sans-serif;
+
+  // Text
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-text: hsl(var(--hue-color), 93%, 54%);
+  --color-first-text-light: hsla(var(--hue-color), 25%, 15%, 0.795);
+  // White
+  --color-second-text: hsl(var(--hue-color), 100%, 100%);
+  --color-second-text-light: hsla(var(--hue-color), 93%, 100%, 0.795);
+  // Black
+  --color-third-text: hsl(var(--hue-color), 100%, 5%);
+  --color-third-text-light: hsla(var(--hue-color), 93%, 15%, 0.795);
+
+  // Section
+  // hsl(var(--hue-color), 93%, 54%)
+  // #E7F6FA
+  --color-first-section-bg: hsl(var(--hue-color), 93%, 54%);
+  // White
+  --color-second-section-bg: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-section-bg: hsl(var(--hue-color), 93%, 10%);
+  --section-padding: 4rem;
+
+  // Box
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-box: hsl(var(--hue-color), 93%, 54%);
+  // White
+  --color-second-box: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-box: hsl(var(--hue-color), 93%, 5%);
+  //
+  --color-fourth-box: linear-gradient(
+    to right,
+    hsl(var(--hue-color), 93%, 54%) 10%,
+    #000 10%
+  );
+  // Black
+  --color-fifth-box: linear-gradient(
+    to right,
+    #000 10%,
+    hsl(var(--hue-color), 93%, 54%) 10%
+  );
+  // #848990
+  --color-sixth-box: hsl(var(--hue-color), 5%, 54%);
+
+  // Button
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-button: hsl(var(--hue-color), 93%, 54%);
+  // White
+  --color-second-button: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-button: hsl(var(--hue-color), 93%, 5%);
+  --color-fourth-button: linear-gradient(
+    to right,
+    var(--color-first-button),
+    var(--color-first-light)
+  );
+  --font-size-button: 18px;
+
+  // Icon
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-icon: hsl(var(--hue-color), 93%, 54%);
+  // White
+  --color-second-icon: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-icon: hsl(var(--hue-color), 93%, 6%);
+  // hsl(33, 5%, 54%)
+  --color-fourth-icon: hsl(var(--hue-color), 5%, 54%);
+  // hsl(33, 5%, 54%)
+  --color-fifth-icon: hsl(28, 93%, 54%);
+
+  // Border
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-border: hsl(var(--hue-color), 93%, 54%);
+  --color-first-border-light: hsla(var(--hue-color), 93%, 54%, 0.725);
+  // White
+  --color-second-border: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-border: hsl(var(--hue-color), 93%, 5%);
+
+  /* ========== Slider ========== */
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-slider: hsl(var(--hue-color), 93%, 54%);
+  // White
+  --color-second-slider: hsl(var(--hue-color), 93%, 100%);
+  // Black
+  --color-third-slider: hsl(var(--hue-color), 93%, 5%);
+
+  /* ========== Slider ========== */
+  // hsl(var(--hue-color), 93%, 54%)
+  // --color-first-slider: hsla(var(--hue-color), 93%, 54%, 0.725);
+  // White
+  // --color-second-slider: hsl(var(--hue-color), 93%, 54%);
+  // Black
+  // --color-third-slider: hsl(var(--hue-color), 93%, 5%);
+
+  /* ========== Overlay ========== */
+  // hsl(var(--hue-color), 93%, 54%)
+  --color-first-overlay: hsla(var(--hue-color), 93%, 54%, 0.725);
+  // White
+  --color-second-overlay: hsl(var(--hue-color), 93%, 54%);
+  // Black
+  --color-third-overlay: hsl(var(--hue-color), 93%, 5%);
+  // #29313d00
+  --color-third-overlay-dark-theme: hsl(var(--hue-color), 20%, 20%, 0);
+
+  /* ========== Scrollbar==========   */
+  --color-scrollbar-bg: hsl(var(--hue-color), 3%, 80%);
+  --color-scrollbar-thumb-bg: var(--color-first);
+  --color-selection: hsl(var(--hue-color), 3%, 90%);
+  --color-selection-bg: hsl(var(--hue-color), 93%, 54%);
+  --scrollbar-width: 1rem;
+  --scrollbar-border-radius: 0.25rem;
+
+  /* ========== Global Color ========== */
+  --color-fff: #fff;
+  --color-000: #000;
+
+  /*  ========== Font => Size, Weight And Typography==========   */
+  --font-size-big: 2.25rem;
+  --font-size-bigger: 2.5rem;
+  --font-size-h1: 1.5rem;
+  --font-size-h2: 1.25rem;
+  --font-size-h3: 1rem;
+  --font-size-normal: 0.938rem;
+  --font-size-small: 0.813rem;
+  --font-size-smaller: 0.75rem;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* ========== Margin========== */
+  --m-0: 0;
+  --m-05: 0.5rem;
+  --m-1: 1rem;
+  --m-105: 1.5rem;
+  --m-2: 2rem;
+  --m-205: 2.5rem;
+  --m-3: 3rem;
+
+  /* ========== Z Index========== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /* ========== Hover Overlay ========== */
+  --ele-transition-fast: 0.3s;
+  --ele-transition-normal: 0.4s;
+  --ele-transition-long: 0.9s;
+  --ele-transition-longer: 1.2s;
+
+  /* ========== Selection ========== */
+  --color-selection: hsl(var(--hue-color), 3%, 90%);
+  --color-selection-bg: hsl(var(--hue-color), 93%, 54%);
+  --website-direction: left;
+  /* ========== Mein ========== */
+
+  /* ========== Footer ========== */
+}
+
+/*
+===========================================================
+Todo =================== Global Element =================== 
+===========================================================
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+===========================================================
+Todo =================== For Scrollbar ==================== 
+===========================================================
+*/
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: var(--color-scrollbar-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar-thumb-bg);
+  border-radius: var(--scrollbar-border-radius);
+}
+
+/*
+===========================================================
+Todo =================== For Selection ==================== 
+===========================================================
+*/
+::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-selection-bg);
+}
+::selection {
+  color: var(--color-selection);
+  background-color: var(--color-selection-bg);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: var(--m-0);
+}
+
+ul {
+  padding: var(--m-0);
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  border: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-normal);
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+/*
+===========================================================
+Todo ================= Button Dark/Light ================== 
+===========================================================
+*/
+.change-theme {
+  // position: absolute;
+  position: fixed;
+  right: 1rem;
+  top: 1.8rem;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: var(--z-fixed);
+  @media screen and (min-width: 768px) {
+  }
+  i {
+    color: var(--color-third-header-icon);
+  }
+  display: none;
+}
+
+/*
+===========================================================
+Todo ================= Button Back To Top ================= 
+===========================================================
+*/
+.back-to-top {
+  position: fixed;
+  right: 1.5%;
+  bottom: -7.5%;
+  display: block;
+  cursor: pointer;
+  height: 15px;
+  width: 40px;
+  padding: 3px 5px;
+  font-size: var(--font-size-smaller);
+  font-weight: bold;
+  color: var(--color-first-text);
+  text-align: center;
+  z-index: var(--z-fixed);
+  background-color: #434343;
+  transition: all 0.25s ease-in-out;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-top: 0;
+  }
+  &::after {
+    bottom: 0;
+    z-index: 5;
+    border-bottom: 20px solid var(--color-first);
+  }
+  &::before {
+    top: -20px;
+    z-index: 4;
+    border-bottom: 20px solid #434343;
+  }
+  &.show-back-to-top {
+    display: block;
+    bottom: 1.25%;
+    visibility: visible;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+      height: 40px;
+      color: #fff;
+      background-color: #434343;
+    }
+  }
+}
+
+/*
+===========================================================
+Todo ======================== Body ======================== 
+===========================================================
+*/
+body {
+  background-color: var(--color-body);
+  color: var(--color-first-text);
+  &.dark-theme {
+    // Body
+    --color-body: hsl(var(--hue-color), 5%, 20%);
+    --color-first-text: hsl(var(--hue-color), 93%, 100%);
+
+    // footer hsl(255, 5%, 30%)
+    --color-first-footer: hsl(var(--hue-color), 5%, 30%);
+
+    /* ========== Scrollbar==========   */
+    --color-scrollbar-bg: hsl(var(--hue-color), 5%, 70%);
+    --color-scrollbar-thumb-bg: hsl(var(--hue-color), 5%, 30%);
+
+    // Main Color
+    --color-first-light: hsla(var(--hue-color), 5%, 5%, 0.725);
+
+    /* ========== Slider ========== */
+    // hsl(var(--hue-color), 93%, 54%)
+    --color-first-slider: hsl(var(--hue-color), 5%, 30%);
+
+    /* ========== Box ========== */
+    // Black
+    --color-second-box: hsl(var(--hue-color), 25%, 15%);
+    // White
+    --color-third-box: hsl(var(--hue-color), 93%, 100%);
+
+    /* ========== Button ========== */
+    // hsl(var(--hue-color), 93%, 54%)
+    --color-first-button: hsl(var(--hue-color), 93%, 54%, 0.1);
+
+    /* ========== Text ========== */
+    // Black
+    --color-second-text: hsl(var(--hue-color), 100%, 5%);
+    // White
+    --color-third-text: hsl(var(--hue-color), 100%, 100%);
+
+    /* ========== Border ========== */
+    // Main Color
+    --color-first-border-light: hsla(var(--hue-color), 15%, 15%, 0.725);
+
+    /* ========== Overlay ========== */
+    // Black
+    --color-first-overlay: hsla(var(--hue-color), 45%, 15%, 0.725);
+    // #29313d00
+    --color-third-overlay-dark-theme: hsl(var(--hue-color), 5%, 20%, 0.98);
+
+    /* ========== Section ========== */
+    // black
+    --color-second-section-bg: hsl(var(--hue-color), 93%, 6%);
+  }
+  /* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */
+  @media screen and (max-width: 575.98px) {
+    /*  ========== Font => Size, Weight And Typography==========   */
+    --font-size-big: 1.5rem;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1rem;
+    --font-size-h3: 0.75rem;
+
+    --section-padding: 2rem;
+  }
+  /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+  @media screen and (min-width: 576px) and (max-width: 677px) {
+    /*  ========== Font => Size, Weight And Typography==========   */
+    --font-size-big: 1.5rem;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1rem;
+    --font-size-h3: 0.75rem;
+
+    --section-padding: 2rem;
+  }
+  /* Large Devices (Phones, 678px And 767px) */
+  @media screen and (min-width: 678px) and (max-width: 767px) {
+    /*  ========== Font => Size, Weight And Typography==========   */
+    --font-size-big: 1.5rem;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1rem;
+    --font-size-h3: 0.75rem;
+
+    --section-padding: 2rem;
+  }
+}

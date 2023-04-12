@@ -1,0 +1,31 @@
+// Font
+@use "animate/v-3.7.1/animate.min.scss" as *;
+
+// Font
+@use "font/font.scss" as *;
+
+// Global
+@use "global/global.scss" as *;
+
+// Header
+@use "header/header.scss" as *;
+@use "header/bs-header.scss" as *;
+
+// Border
+@use "border/border" as *;
+
+// Loading
+@use "loading/loading" as *;
+
+// Global
+@use "global/global" as *;
+
+// Slider
+@use "slider/slider" as *;
+@use "slider/swiper" as *;
+
+// Main
+@use "main/main" as *;
+
+// Footer
+@use "footer/footer" as *;

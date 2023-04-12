@@ -1,0 +1,551 @@
+main(class="main") 
+  // SignUp
+  section(class='signUp' id="signUp")
+    div(class='container-fluid')
+      div(class='wrapper-signUp')
+        div(class='inner-signUp')
+          div(class='form-signUp')
+            div(class='back-home')
+              a(href="index.html")
+                span(class="") Back To Home
+                i(class="fas fa-arrow-right iconName-icon")
+
+            div(class='wrapper-form')
+              div(class='data-title-description')
+                div(class='title') join us
+                div(class='description') Create your account now to take advantage of the various features
+
+              form(action="" class="form addUser" id="form-signUp")
+
+                // photo URL
+                div(class='control-PhotoURL')
+                  label(for="inputPhotoURL" class="form-label")  PhotoURL
+                  input(type="file" name='inputPhotoURL' class="form-control" id="inputPhotoURL" placeholder="Type Email")
+
+
+                // Display Name
+                div(class='control-displayName')
+                  label(for="inputDisplayName" class="form-label")  Display Name
+                  input(type="text" name='inputDisplayName' class="form-control" id="inputDisplayName" placeholder="Type Email")
+
+
+                // Display Name
+                div(class='control-phoneNumber')
+                  label(for="inputPhoneNumber" class="form-label") Phone Number
+                  input(type="text" name='inputPhoneNumber' class="form-control" id="inputPhoneNumber" placeholder="Type Email")
+
+
+                div(class='control-email')
+                  label(for="inputEmail" class="form-label") Email address
+                  input(type="email" name='inputEmail' class="form-control" id="inputEmail" placeholder="Type Email")
+
+                div(class='control-password ')
+                  label(for="inputPassword" class="form-label") Password
+                  div(class='input-group')
+                    input(type="password" name='inputPassword' class="form-control" id="inputPassword" placeholder="Type Password")
+                    button(id="btn-toggle-icon" class="input-group-text btn-toggle-icon-signUp fas fa-eye")
+
+                div(class="error-form-signUp") 
+                  div(class='head-error')
+                    span(class="input-name-error") Email
+                    span(class="input-name-icon") 
+                      i(class="fas fa-times close-icon")
+                  div(class='body-error')
+                    p(class='inner-error') text Error
+                input(type="submit" value="Send")
+          // Slider 
+          div(class='slider-signUp')
+            // =============== swiper ===============
+            // =============== https://swiperjs.com/ ===============
+            // link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+            // script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") 
+            // Swiper  
+            div(class="swiper signUpSlider")
+              // Wrapper
+              div(class="swiper-wrapper")
+                // Inner
+                div(class="swiper-slide") 
+                  div(class='item')
+                    div(class='img')
+                      img(src="images/signUp/auth.webp" alt="alt")
+                    div(class='data-text')
+                      div(class='title') The best health care for you and your family
+                      div(class='description') We believe that superior medical care is a right for everyone
+                div(class="swiper-slide") 
+                  div(class='item')
+                    div(class='img')
+                      img(src="images/signUp/auth-data.webp" alt="alt")
+                    div(class='data-text')
+                      div(class='title') The best health care for you and your family
+                      div(class='description') We believe that superior medical care is a right for everyone
+              // Button Bottom 
+              div( class="swiper-pagination")
+
+  // Sign In
+  section(class='signIn' id='signIn')
+    div(class='container-fluid')
+      div(class='wrapper-signIn')
+        div(class='inner-signIn')
+          div(class='form-signIn')
+            div(class='back-home')
+              a(href="index.html")
+                span(class="") Back To Home
+                i(class="fas fa-arrow-right iconName-icon")
+
+            div(class='wrapper-form')
+              div(class='data-title-description')
+                div(class='title') SignIn
+                div(class='description') Welcome to SignIn! We wish you an interesting and useful time with us.
+
+              form(action="" class="form " id="form-signIn") 
+                div(class='control-email')
+                  label(for="inputEmail" class="form-label") Email address
+                  input(type="email" name='email' class="form-control" id="inputEmail" placeholder="Type Email")
+
+                div(class='control-password ')
+                  label(for="inputPassword" class="form-label") Password
+                  div(class='input-group')
+                    input(type="password" name='password' class="form-control" id="inputPassword" placeholder="Type Password")
+                    button(id="btn-toggle-icon" class="input-group-text fas fa-eye")
+
+                div(class="error-form-signIn") 
+                  div(class='head-error')
+                    span(class="input-name-error") Email
+                    span(class="input-name-icon") 
+                      i(class="fas fa-times close-icon")
+                  div(class='body-error')
+                    p(class='inner-error') text Error
+                input(type="submit" value="Send")
+          // Slider 
+          div(class='slider-signUp')
+            // =============== swiper ===============
+            // =============== https://swiperjs.com/ ===============
+            // link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+            // script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") 
+            // Swiper  
+            div(class="swiper signUpSlider")
+              // Wrapper
+              div(class="swiper-wrapper")
+                // Inner
+                div(class="swiper-slide") 
+                  div(class='item')
+                    div(class='img')
+                      img(src="images/signUp/auth.webp" alt="alt")
+                    div(class='data-text')
+                      div(class='title') The best health care for you and your family
+                      div(class='description') We believe that superior medical care is a right for everyone
+                div(class="swiper-slide") 
+                  div(class='item')
+                    div(class='img')
+                      img(src="images/signUp/auth-data.webp" alt="alt")
+                    div(class='data-text')
+                      div(class='title') The best health care for you and your family
+                      div(class='description') We believe that superior medical care is a right for everyone
+              // Button Bottom 
+              div( class="swiper-pagination")
+
+  // profile
+  section(class='profile' id='profile')
+    div(class='container-fluid')
+      div(class='wrapper-profile')
+        div(class='inner-profile')
+          div(class='back-home')
+            a(href="index.html")
+              span(class="") Back To Home
+              i(class="fas fa-arrow-right iconName-icon")
+          div(class='box-profile')
+            //- div(class='img-displayName')
+              div(class='img')
+                label(class="form-label" for="box-profile-img") PhotoURL
+                img(alt="Profile Image" id="box-profile-img" class="box-profile-img")
+              div(class='displayName')
+                label(class="form-label" for="inputDisplayNameUser") displayName
+                input(class="form-control" type="text" name="inputDisplayNameUser" id="inputDisplayNameUser")
+            //- div(class='phoneNumber-email-password')
+              div(class='phoneNumber')
+                label(class="form-label" for="inputPhoneNumberUser") PhotoURL
+                input(class="form-control" type="tel" name="inputPhoneNumberUser" id="inputPhoneNumberUser")
+              div(class='email')
+                label(class="form-label" for="inputEmailUser") Email
+                input(class="form-control" type="text" name="inputEmailUser" id="inputEmailUser")
+              div(class='password')
+                label(class="form-label" for="inputPasswordUser") password
+                input(class="form-control" type="text" name="inputPasswordUser" id="inputPasswordUser")
+            //- div(class='add-change-user')
+              button(class="send-change-user") send-change-user
+
+
+
+
+  // Create Post
+  section(class='createPost' id='createPost')
+    div(class='container-fluid')
+      div(class='wrapper-createPost')
+        div(class='inner-createPost')
+          div(class='form-createPost')
+            div(class='back-home')
+              a(href="index.html")
+                span(class="") Back To Home
+                i(class="fas fa-arrow-right iconName-icon")
+
+            div(class='wrapper-form')
+              div(class='data-title-description')
+                div(class='title') Create Post
+                div(class='description') Welcome to Create Post! 
+
+              form(action="" class="form " id="form-createPost") 
+                // Image
+                div(class='control-image-post')
+                  label(for="inputImages" class="form-label") Multiple Files Image
+                  //- button(class="buttonSelectImages" id="buttonSelectImages" ) Select Images
+                  input(type="file" name='inputSelectImages' class="form-control" id="inputSelectImages" Multiple)
+
+                //  Title
+                div(class='control-title-post')
+                  label(for="inputTitlePost" class="form-label") Title Post
+                  input(type="text" name='inputTitlePost' class="form-control" id="inputTitlePost" placeholder="Type Title Post")
+
+                // Description
+                div(class='form-floating control-description-post')
+                  textarea(class="form-control" name='inputDescriptionPost' placeholder="Description" id="inputDescriptionPost")
+                  label(for="inputDescriptionPost" class="form-label") Description Post
+
+                // Purview & Reading
+                div(class='control-purview-reading-post')
+                  div(class="row g-2")
+                    div(class='col-md')
+                      div(class='form-floating')
+                        select(class="form-select" name="selectPurview" id="selectPurview") 
+                          option(value="purview one") purview one
+                          option(value="purview tow") purview tow
+                          option(value="purview three") purview three
+                        label(for="purview") Purview
+                    div(class='col-md')
+                      div(class='form-floating')
+                        select(class="form-select" name="selectReading" id="selectReading") 
+                          option(value="reading one") reading one
+                          option(value="reading tow") reading tow
+                          option(value="reading three") reading three
+                        label(for="reading") Reading
+
+                div(class="error-form-createPost") 
+                  div(class='head-error')
+                    span(class="input-name-error") Email
+                    span(class="input-name-icon") 
+                      i(class="fas fa-times close-icon")
+                  div(class='body-error')
+                    p(class='inner-error') text Error
+                input(type="submit" value="Send")
+
+          // Preview Post 
+          div(class='view-post')
+            div(class='view-post-wrapper')
+              div(class="view-post-images" id="view-post-images")
+              p(class='view-post-ImgUploadProgress') 
+              p(class='view-post-title') 
+              p(class='view-post-description') 
+              div(class='wrapper-purview-reading')
+                p(class='view-post-purview') 
+                p(class='view-post-reading') 
+
+  // Section Physical Health
+  section(class="physical-health") 
+    div(class="container") 
+      div(class="header-physical-health")
+        h4(class="title") Our medical community
+        p(class="description") Learn about your physical and mental health habits through the Dotcare Medical Blog.
+      // =============== swiper ===============
+      // =============== https://swiperjs.com/ ===============
+      // link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+      // script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") 
+      // Swiper  
+      div(class="swiper physicalHealth")
+        // Wrapper
+        div(class="swiper-wrapper")
+          // Inner
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-2.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-3.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-4.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-5.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-6.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-7.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-8.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+          div(class="swiper-slide") 
+            div(class="inner")
+              div(class="img")
+                img(src="images/main/main-9.webp" alt="")
+                span(class="text") New
+              div(class="text")
+                a(href="#") Learn the best tips to prevent diabetes
+                p(class="description") Studies show that 9 out of 10 people can avoid diabetes, follow us
+                div(class="type")
+                  span(class="type-data") Health and Beauty
+                  span(class="type-data") 5 minutes read
+
+        // Arrow Left And Right
+        div( class="swiper-button-next")
+        div( class="swiper-button-prev")
+        // Button Bottom 
+        div( class="swiper-pagination")
+
+  // Home Care
+  section(class="homeCare") 
+    div(class="container")
+      div(class="inner")
+        div(class='text')
+          h4(class="title") Home care services will be available soon
+          p(class="description") You can now book home care services through the Dot Care application, and it will soon be available through the website
+        div(class='img')
+          img(src="images/main/main-1.webp" alt="alt")
+
+
+  // Book with us according to specialties
+  section(class='bookWithUs')
+    div(class='container')
+      div(class='wrapper')
+        div(class='inner')
+          div(class='slider')
+            // =============== swiper ===============
+            // =============== https://swiperjs.com/ ===============
+            // link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+            // script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") 
+            // Swiper  
+            div(class="swiper bookWithUsSwiper")
+              // Wrapper
+              div(class="swiper-wrapper")
+                // Inner
+                div(class="swiper-slide") 
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+                div(class="swiper-slide")  
+                  div(class='content')
+                    div(class='img')
+                      img(src="images/main/bookWithUs.webp" alt="")
+                    div(class='icon')
+                      img(src="images/main/ENT.webp" alt="alt")
+                    div(class='type')
+                      p(class="") Ear, Nose and Throat
+              // Arrow Left And Right
+              div( class="swiper-button-next")
+              div( class="swiper-button-prev")
+
+          div(class='buttonClick')
+            h3(class="text") Book with us according to specialties
+            a(class="main-button" href="#") View all majors
+
+  // Visiting Doctors Program
+  section(class='visiting-doctor-program')
+    div(class="container")
+      div(class='section-header')
+        h3(class="title") Visiting Doctors Program
+        h3(class="description") The most qualified doctors around the world in various medical specialties
+
+      div(class="wrapper")
+        div(class="inner")
+          div(class="item")
+            div(class="img")
+              img(src="images/main/visiting-doctor-program-1.webp")
+            div(class="data-text")
+              div(class="name") Dr. Muhammad Al-Shafei
+              div(class="visiting-position")
+                i(class="fas fa-stethoscope")
+                span(class="") Neurosurgery expert
+              div(class="visiting-hospital")
+                i(class="fas fa-hospital")
+                span(class="") Neurosurgery expert
+              div(class="visiting-time") Tuesday 2 May 2023 : Thursday 4 May 2023
+              a(href="#" class="visiting-book") book an appointment
+
+          div(class="item")
+            div(class="img")
+              img(src="images/main/visiting-doctor-program-2.svg")
+            div(class="data-text")
+              div(class="name") Dr. Muhammad Al-Shafei
+              div(class="visiting-position")
+                i(class="fas fa-stethoscope")
+                span(class="") Neurosurgery expert
+              div(class="visiting-hospital")
+                i(class="fas fa-hospital")
+                span(class="") Neurosurgery expert
+              div(class="visiting-time") Tuesday 2 May 2023 : Thursday 4 May 2023
+              a(href="#" class="visiting-book") book an appointment
+
+          div(class="item")
+            div(class="img")
+              img(src="images/main/visiting-doctor-program-3.webp")
+            div(class="data-text")
+              div(class="name") Dr. Muhammad Al-Shafei
+              div(class="visiting-position")
+                i(class="fas fa-stethoscope")
+                span(class="") Neurosurgery expert
+              div(class="visiting-hospital")
+                i(class="fas fa-hospital")
+                span(class="") Neurosurgery expert
+              div(class="visiting-time") Tuesday 2 May 2023 : Thursday 4 May 2023
+              a(href="#" class="visiting-book") book an appointment
+
+        div(class='btn-all-visiting-doctor-program')
+          a(href="#") All visiting doctors
+
+  // Section Call Us On Whatsapp
+  section(class='callWhatsapp')
+    div(class='overlay')
+    div(class='container')
+      div(class='wrapper')
+        div(class='inner')
+          div(class='data-text')
+            div(class='title') Doctor ?
+            div(class='description') Be a part of Dotcare and share the ease of healthcare with your patients
+            div(class='buttonCall')
+              a(href="https://wa.me/+201101853042" class="main-button" target="_blank") 
+                i(class="fab fa-whatsapp facebook-icon")
+                span(class="") Whats App
+          div(class='img')
+            img(src="images/main/callWhatsapp-4.webp" alt="alt")
+
+  // Download App
+  section(class='downloadApp')
+    div(class='overlay')
+    div(class='container')
+      div(class='wrapper')
+        div(class="inner")
+          div(class='data-text')
+            div(class="text") You can book all health services and medical consultations through the 
+              span(class="main-color") Dotcare 
+              |application
+            div(class='img')
+              img(src="images/main/google-play-badge.jfif" alt="alt")
+              img(src="images/main/app-store-badge.jfif" alt="alt")
+          div(class='img')
+            img(src="images/main/download-app-1.webp" alt="alt")

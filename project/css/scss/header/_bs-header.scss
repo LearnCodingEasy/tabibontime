@@ -1,0 +1,75 @@
+.header {
+  // height: var(--header-height);
+  // background-color: var(--color-first-header);
+  // position: relative;
+  // transition: all 0.4s ease;
+  .navbar {
+    // height: 100%;
+    .container {
+      // Logo
+      .navbar-brand {
+        img {
+          width: 150px;
+        }
+      }
+      // Button On Mobile
+      .navbar-toggler {
+        .navbar-toggler-icon {
+        }
+      }
+      // Div Menu
+      .navbar-collapse {
+        /* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */
+        @media screen and (max-width: 575.98px) {
+          background-color: var(--color-first-header);
+        }
+        /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+        @media screen and (min-width: 576px) and (max-width: 677px) {
+          background-color: var(--color-first-header);
+        }
+        /* Large Devices (Phones, 678px And 767px) */
+        @media screen and (min-width: 678px) and (max-width: 767px) {
+          background-color: var(--color-first-header);
+        }
+        /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          background-color: var(--color-first-header);
+        }
+        .navbar-nav {
+          .nav-item {
+            /* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */
+            @media screen and (max-width: 575.98px) {
+              margin-bottom: 0.5rem;
+              padding-left: 1rem;
+            }
+            /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+            @media screen and (min-width: 576px) and (max-width: 677px) {
+              margin-bottom: 0.5rem;
+              padding-left: 1rem;
+            }
+            /* Large Devices (Phones, 678px And 767px) */
+            @media screen and (min-width: 678px) and (max-width: 767px) {
+              margin-bottom: 0.5rem;
+              padding-left: 1rem;
+            }
+            /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+              margin-bottom: 0.5rem;
+              padding-left: 1rem;
+            }
+            .nav-link {
+              color: var(--color-second-header-text);
+              &.active {
+                // font-weight: bold;
+              }
+              &.nav-link-active {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        //
+      }
+    }
+  }
+}

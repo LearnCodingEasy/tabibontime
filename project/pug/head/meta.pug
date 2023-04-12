@@ -1,0 +1,48 @@
+//- Utf 8 تدعم اللغة العربية
+//- وفائدته تحديد الترميز الخاص بالصفحة ونستخدم هنا الترميز العالمي 
+//- Unicode Transformation Format 
+//- والذي يدعم جميع اللغات والأحرف الخاصة بها.
+meta(charset="UTF-8")
+
+//- وفائدته وضع وصف الصفحة فعندما تبحث عن موقع معين في 
+//- Google
+//- Meta Description  مثلا تجد إسم الموقع وتحته نص يوصف الموقع وهذا هو ال  .
+meta(name="description" content="Your Website Description")
+
+//- Copyright وفائدتها أن تخبر الشخص الذي يتصفح موقعك أنه لديك مواد عليها حقوق فكرية 
+//- Content وهي مملوكة لشركتك أو موقعك المكتوب داخل ال  .
+meta(name="copyright" content="Your Company Or Brand Name")
+
+//- عن طريقه يمكنك توجيه عناكب البحث 
+//- Search Spiders 
+//- Indexing الخاصة بمحركات البحث لما تريد فيمكنك تحديد الصفحات التي تريد أن تقوم بعمل  
+//- لها والصفحات التي لا تريد وتتحكم كاملا فيما يحدث
+meta(name="robots" content="index, follow")
+
+//- Author من اسمها 
+//- وهو المؤلف أو الكاتب الذي كتب محتوى الصفحة .
+meta(name="author" content="Learn Coding Easy")
+
+//- وهو الجزء الخاص بمراجعة الصفحة فيمكنك 
+//- وضع التاريخ الذي قمت بمراجعة الصفحة فيه 
+//- وعلى سبيل المثال قمت بكتابة مقال معين يمكن أن تضع هذا الجزء لتوضح انك قمت بتحديث المقال مؤخرا 
+//- ليظهر في محرك البحث للشخص قبل الدخول على المقال
+meta(name="revised" content="Tuesday, July 20th, 2022, 10:15 am")
+
+//- Internet Explorer هذا يشير إلى أن المستعرض يجب أن يستخدم آخر إصدار متوافق من 
+//- المتاح لديه لعرض الصفحة بشكل صحيح.
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+//- Viewport وفائدته التحكم في ال 
+//- Width=Device-Width والجزء الخاص بال 
+//- Device من اسمه فهو يجعل العرض الخاص بالموقع بنفس عرض ال 
+//- Initial-Scale التي تشاهد الموقع منها والجزء الخاص ب 
+//- Zoom Level يقوم بتعديل ال 
+//-  بمجرد تحميل الصفحة ليكون الوضع المناسب لعرض الموقع.
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+// Open Graph 
+//- إظهار البيانات المتعلقة بصفحات الويب عند مشاركتها على منصات التواصل الاجتماعي مثل فيسبوك وتويتر ولينكدإن وغيرها.
+meta(property="og:title" content="Tabib On Time")
+meta(property="og:description" content="Welcome to my website")
+meta(property="og:image" content="https://example.com/images/my-image.png")

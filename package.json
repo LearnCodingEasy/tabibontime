@@ -1,0 +1,43 @@
+{
+  "name": "start-website",
+  "version": "1.0.0",
+  "description": "* Book Online Or We Book For You",
+  "main": "build-website.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearnCodingEasy/tabibontime.git"
+  },
+  "author": "Hossam Rashad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LearnCodingEasy/tabibontime/issues"
+  },
+  "homepage": "https://github.com/LearnCodingEasy/tabibontime#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "firebase": "^9.18.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.0",
+    "gulp-zip": "^4.2.0",
+    "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp-pug": "^5.0.0",
+    "static-server": "^2.2.1",
+    "vinyl-ftp": "^0.6.1",
+    "vue": "^3.2.47"
+  }
+}
